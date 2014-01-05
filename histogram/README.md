@@ -32,10 +32,10 @@ But it is still not that visuable, if we can get such graph, it may be better:
 
 ## How can we convert the data to a graph
 
-Our drawit.sh generated it:
+Our histogram.sh generated it:
 
 <pre>
-$ ./drawit.sh data.txt > pic/example.svg
+$ ./histogram.sh data.txt > pic/example.svg
 </pre>
 
 Open it in moderm browsers, use chromium-browser as an example:
@@ -85,6 +85,6 @@ $ popd
 It looks like the one row data we introduced above, so, draw it:
 
 <pre>
-$ ./drawit.sh examples/linux-boot-graph/boot.log > examples/linux-boot-graph/boot.svg
+$ ./histogram.sh examples/linux-boot-graph/boot.log > examples/linux-boot-graph/boot.svg
 $ chromium-browser examples/linux-boot-graph/boot.svg
 </pre>

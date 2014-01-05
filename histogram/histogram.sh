@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# drawit.sh -- Draw one row data in SVG with histogram
+# histogram.sh -- Draw one row data in SVG with histogram
 #
 # Derive from (linux)/scripts/bootgraph.pl and FlameGraph.
 #
