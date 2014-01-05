@@ -14,6 +14,10 @@ such tools.
 - [histogram/drawit.sh](histogram/drawit.sh) draws the one raw data in SVG
   with histogram
 
+> This tool derives from  
+> [(Linux)/scripts/bootgraph.pl](http://stuff.mit.edu/afs/sipb/contrib/linux/scripts/bootgraph.pl)
+> and [FlameGraph](https://github.com/brendangregg/FlameGraph).
+
 ## Tools Collected From Internet
 
 - [gnuplot](http://www.gnuplot.info/) can convert the data to a static graph.

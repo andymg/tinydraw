@@ -2,6 +2,8 @@
 #
 # drawit.sh -- Draw one row data in SVG with histogram
 #
+# Derive from (linux)/scripts/bootgraph.pl and FlameGraph.
+#
 # Author: Wu Zhangjin <wuzhangjin@gmail.com>
 # Update: Sun Jan  5 22:15:20 CST 2014
 #
