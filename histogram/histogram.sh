@@ -21,6 +21,7 @@ svg_width=1200
 svg_height=1200
 text_width=600
 text_offset=20
+float_precision=3
 
 function usage #error
 {
@@ -118,7 +119,7 @@ EOF
 
 ## Build the map between the max value with the SVG width
 max_value=$(cat $data_file | tr -s ' ' | tr '\t' ' ' | cut -d ' ' -f$value_row | sort -g -r | head -1)
-mult=$(echo "($svg_width - $x_start - $text_width)/ $max_value" | bc -l)
+mult=$(echo "scale=$float_precision; ($svg_width - $x_start - $text_width)/ $max_value" | bc)
 
 while read param1 param2
 do
@@ -144,11 +145,11 @@ string=$(echo "$string" | tr -d "'|\"|>|<")
 ((y = y + rect_width))
 
 ## Get the height of the rectangle
-height=$(echo "($mult * $value)" | bc -l)
+height=$(echo "scale=$float_precision; ($mult * $value)" | bc)
 
 ## Get the position of the text
 text_length=${#string}
-text_x=$(echo "$height+$text_offset" | bc -l)
+text_x=$(echo "$height+$text_offset" | bc)
 ((text_y = y + rect_width/2 + rect_width/3))
 
 echo "    <g class=\"func_g\" onmouseover=\"s('$string($value)')\" onmouseout=\"c()\">"
