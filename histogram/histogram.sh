@@ -8,19 +8,26 @@
 # Update: Sun Jan  5 22:15:20 CST 2014
 #
 
+# Arguments
 data_file=$1
 graph_title=$2
 data_info=$3
 
+# Configuration
 rect_width=10
 x_start=10
 y_start=60
 svg_width=1200
+svg_height=1200
 text_width=600
 text_offset=20
 
-function usage
+function usage #error
 {
+	echo
+	echo $1
+	echo
+
 	echo "* Usage:"
 	echo "	$0 data_file [graph_title] [data_info]"
 	echo
@@ -39,10 +46,27 @@ function usage
 	echo
 }
 
-[ -z "$data_file" ] && usage && exit 1
-[ ! -f "$data_file" ] && usage && exit 1
+[ -z "$data_file" ] && usage "No data_file specified." && exit 1
+[ ! -f "$data_file" ] && usage "No such file: $data_file" && exit 1
 [ -z "$graph_title" ] && graph_title="Boot Graph"
 [ -z "$data_info" ] && data_info="Function"
+
+# Calculate the svg_height
+count=$(wc -l $data_file | cut -d' ' -f1)
+((svg_height=y_start*2 + rect_width*count))
+
+# default order: [string, value], detect the real order
+# If it is [value, string], set swap_input to 1
+swap_input=1
+cat $data_file | cut -d' ' -f1 | head -1 | egrep -q "[a-zA-Z_:]+"
+[ $? -eq 0 ] && swap_input=0
+
+# Get the right value_row for the cut command
+if [ $swap_input -eq 1 ]; then
+    value_row=1
+else
+    value_row=2
+fi
 
 # Print the SVG header
 #
@@ -52,7 +76,7 @@ function usage
 cat <<EOF
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="$svg_width" height="100%" onload="init(evt)" viewBox="0 0 1200 100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="$svg_width" height="$svg_height" onload="init(evt)" viewBox="0 0 $svg_width $svg_height" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs >
 	<linearGradient id="background" y1="0" y2="1" x1="0" x2="0" >
 		<stop stop-color="#eeeeee" offset="5%" />
@@ -93,11 +117,23 @@ EOF
 ((y= y_start + rect_width))
 
 ## Build the map between the max value with the SVG width
-max_value=$(cat $data_file | tr -s ' ' | tr '\t' ' ' | cut -d ' ' -f2 | sort -g -r | head -1)
+max_value=$(cat $data_file | tr -s ' ' | tr '\t' ' ' | cut -d ' ' -f$value_row | sort -g -r | head -1)
 mult=$(echo "($svg_width - $x_start - $text_width)/ $max_value" | bc -l)
 
-while read string value
+while read param1 param2
 do
+
+# Get parameters
+if [ $swap_input -eq 1 ]; then
+    string="$param2"
+    value="$param1"
+else
+    string="$param1"
+    value="$param2"
+fi
+
+# Drop the chars: ",',),(,<,>
+string=$(echo "$string" | tr -d "'|\"|>|<")
 
 ## Generate the color
 ((r = $RANDOM % 255))
@@ -110,18 +146,15 @@ do
 ## Get the height of the rectangle
 height=$(echo "($mult * $value)" | bc -l)
 
-
 ## Get the position of the text
 text_length=${#string}
 text_x=$(echo "$height+$text_offset" | bc -l)
 ((text_y = y + rect_width/2 + rect_width/3))
 
-cat <<EOF
-    <g class="func_g" onmouseover="s('$string($value)')" onmouseout="c()">
-        <rect x="$x_start" y="$y" width="$height" height="$rect_width" fill="rgb($r,$g,$b)" rx="2" ry="2" />
-        <text text-anchor="" x="$text_x" y="$text_y" font-size="8" font-family="Verdana" fill="rgb(0,0,0)"  >$string($value)</text>
-    </g>
-EOF
+echo "    <g class=\"func_g\" onmouseover=\"s('$string($value)')\" onmouseout=\"c()\">"
+echo "        <rect x=\"$x_start\" y=\"$y\" width=\"$height\" height=\"$rect_width\" fill=\"rgb($r,$g,$b)\" rx=\"2\" ry=\"2\" />"
+echo "        <text text-anchor=\"\" x=\"$text_x\" y=\"$text_y\" font-size=\"8\" font-family=\"Verdana\" fill=\"rgb(0,0,0)\"  >$string($value)</text>"
+echo "    </g>"
 
 done < $data_file
 
