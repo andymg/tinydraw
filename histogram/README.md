@@ -115,11 +115,13 @@ Fortunately, our two row data format is compatible with the format of *Flame
 Graph*, the only difference is that *Flame Graph* is able to draw the calling
 tree in the graph, its data format looks like:
 
+<pre>
 func1;subfunc1;subsubfunc1 2
 func1;subfunc2;subsubfunc1 300
 func2;subfunc1;subsubfunc1 50
 func3 30
 func4;subfunc1 100
+</pre>
 
 Our data format don't have the calling tree information, so, *Flame Graph* can
 also draw it:
@@ -138,3 +140,16 @@ to read all of the data in one page.
 
 Since the full data in boot.log has different order of [string, value], so, it
 can not be drawn by *Flame Graph*.
+
+### Draw the boot time data of /proc/bootprof of MTK
+
+The /proc/bootprof interface stores the time cost information of different
+events, to get a visual output, we can also draw it with our histogram.sh.
+
+First off, get the data and convert the data to two row data format:
+
+<pre>
+$ adb shell cat /proc/bootprof > bootprof-proc.log
+$ cat bootprof-proc.log | examples/linux-boot-graph/bootprof.sh > bootprof.log
+$ ./histogram.sh bootprof.log > bootprof.svg
+</pre>
