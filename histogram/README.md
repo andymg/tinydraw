@@ -1,9 +1,9 @@
 
-# TinyDraw -- Draw one row data in SVG with histogram
+# TinyDraw -- Draw two row data in SVG with histogram
 
 ## Background
 
-We often have some similar data listed in one row like this:
+We often have some similar data listed in two row like this:
 
 > A 5
 > B 6.9
@@ -82,7 +82,7 @@ PVRCore_Init 0.077
 $ popd
 </pre>
 
-It looks like the one row data we introduced above, so, draw it:
+It looks like the two row data we introduced above, so, draw it:
 
 <pre>
 $ ./histogram.sh examples/linux-boot-graph/boot.log > examples/linux-boot-graph/boot.svg
