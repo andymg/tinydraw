@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# dmesg.sh -- Convert data format of /proc/dmesg to one row data format
+# dmesg.sh -- Convert data of `dmesg` to two row data format
 #
 
 dmesg_log_file=$1
