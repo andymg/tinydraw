@@ -1,57 +1,1817 @@
-s3c_fb_init 0.091
-s5p_mipi_dsi_register 0.319
-pl330_driver_init 0.019
-s3c24xx_serial_modinit 4.706
-PVRCore_Init 0.077
-brd_init 0.057
-loop_init 0.014
-max77665_muic_init 0.03
-arizona_spi_driver_init 0.035
-mx_hub_init 0.305
-bcm2079x_dev_init 0.04
-tun_init 0.017
-exynos_drd_driver_init 0.026
-ehci_hcd_init 0.048
-xhci_hcd_init 0.056
-usb_stor_init 0.021
-exynos_ss_udc_driver_init 0.012
-mx_tpi_init 0.014
-gp2ap_init 0.02
-akm_compass_init 0.092
-lsm330dlc_acc_init 0.166
-lsm330dlc_gyr_init 0.149
-synaptics_rmi4_init 1.136
-max77802_rtc_init 0.083
-i2c_dev_init 0.012
-ms2r_is_spi_init 0.013
-s5pcsis_driver_init 0.062
-flite_driver_init 0.17
-gsc_driver_init 0.073
-sc_driver_init 0.018
-jpeg_init 0.022
-fimg2d_register 0.044
-s5p_mfc_init 0.024
-hdcp_init 0.018
-hdmi_init 0.022
-mxr_init 0.089
-rot_driver_init 0.016
-jpeg_hx_init 0.025
-exynos_tmu_driver_init 0.011
-watchdog_init 0.039
-dm_init 0.018
-hci_uart_init 0.02
-init_menu 0.041
-dw_mci_init 0.011
-m6x_audio_init 0.068
-vfp_init 2.794
-modem_device_init 0.033
-regulator_init_complete 0.028
-S3cLcdBridgeInit 0.036
-dhd_module_init 0.978
-gpio_keys_init 0.014
-rtc_hctosys 0.021
-max17047_init 0.076
-max77665_charger_init 0.025
-exynos5_busfreq_mif_init 0.142
-exynos_cpufreq_init 0.018
-alsa_sound_last_init 0.012
+0.613 pins 164 (SDA) and 163 (SCL)
+0 initcall m6x_nfc_init+0x0/0x68 returned 0 after 756 usecs
+0.001 calling bcm43341_bluetooth_init+0x0/0x1c @ 1
+0 [BT] Bluetooth Power Off.
+0 wake enabled for irq 538
+0 [BT] bcm43341 probe END
+0 initcall bcm43341_bluetooth_init+0x0/0x1c returned 0 after 978 usecs
+0.001 calling secmem_init+0x0/0x6c @ 1
+0 initcall secmem_init+0x0/0x6c returned 0 after 252 usecs
+0 calling bL_control_init+0x0/0x100 @ 1
+0.011 big.LITTLE switcher initializing
+0 big.LITTLE switcher initialized
+0 initcall bL_control_init+0x0/0x100 returned 0 after 11110 usecs
+0.001 calling s5p_mfc_memory_init+0x0/0x84 @ 1
+0 initcall s5p_mfc_memory_init+0x0/0x84 returned 0 after 2 usecs
+0 calling adc_init+0x0/0x3c @ 1
+0 s3c-adc samsung-adc-v5: operating without regulator "vdd" .
+0 s3c-adc samsung-adc-v5: attached adc driver
+0.001 initcall adc_init+0x0/0x3c returned 0 after 581 usecs
+0 calling proc_execdomains_init+0x0/0x40 @ 1
+0 initcall proc_execdomains_init+0x0/0x40 returned 0 after 9 usecs
+0 calling ioresources_init+0x0/0x60 @ 1
+0 initcall ioresources_init+0x0/0x60 returned 0 after 10 usecs
+0 calling uid_cache_init+0x0/0xa4 @ 1
+0 initcall uid_cache_init+0x0/0xa4 returned 0 after 9 usecs
+0 calling init_posix_timers+0x0/0x1e8 @ 1
+0.001 initcall init_posix_timers+0x0/0x1e8 returned 0 after 27 usecs
+0 calling init_posix_cpu_timers+0x0/0xec @ 1
+0 initcall init_posix_cpu_timers+0x0/0xec returned 0 after 2 usecs
+0 calling suspend_time_syscore_init+0x0/0x20 @ 1
+0 initcall suspend_time_syscore_init+0x0/0x20 returned 0 after 2 usecs
+0 calling timekeeping_init_ops+0x0/0x20 @ 1
+0 initcall timekeeping_init_ops+0x0/0x20 returned 0 after 2 usecs
+0.001 calling init_clocksource_sysfs+0x0/0x5c @ 1
+0 initcall init_clocksource_sysfs+0x0/0x5c returned 0 after 415 usecs
+0 calling init_timer_list_procfs+0x0/0x48 @ 1
+0 initcall init_timer_list_procfs+0x0/0x48 returned 0 after 8 usecs
+0 calling init_tstats_procfs+0x0/0x48 @ 1
+0 initcall init_tstats_procfs+0x0/0x48 returned 0 after 7 usecs
+0.001 calling futex_init+0x0/0x80 @ 1
+0 initcall futex_init+0x0/0x80 returned 0 after 8 usecs
+0 calling kallsyms_init+0x0/0x40 @ 1
+0 initcall kallsyms_init+0x0/0x40 returned 0 after 7 usecs
+0 calling hung_task_init+0x0/0x60 @ 1
+0 initcall hung_task_init+0x0/0x60 returned 0 after 62 usecs
+0 calling irq_gc_init_ops+0x0/0x20 @ 1
+0 initcall irq_gc_init_ops+0x0/0x20 returned 0 after 2 usecs
+0.001 calling irq_pm_init_ops+0x0/0x20 @ 1
+0 initcall irq_pm_init_ops+0x0/0x20 returned 0 after 2 usecs
+0 calling utsname_sysctl_init+0x0/0x20 @ 1
+0 initcall utsname_sysctl_init+0x0/0x20 returned 0 after 23 usecs
+0 calling init_per_zone_wmark_min+0x0/0x98 @ 1
+0 initcall init_per_zone_wmark_min+0x0/0x98 returned 0 after 186 usecs
+0.001 calling kswapd_init+0x0/0x2c @ 1
+0 initcall kswapd_init+0x0/0x2c returned 0 after 66 usecs
+0 calling setup_vmstat+0x0/0xec @ 1
+0 initcall setup_vmstat+0x0/0xec returned 0 after 48 usecs
+0 calling mm_sysfs_init+0x0/0x44 @ 1
+0 initcall mm_sysfs_init+0x0/0x44 returned 0 after 10 usecs
+0 calling proc_vmalloc_init+0x0/0x40 @ 1
+0.001 initcall proc_vmalloc_init+0x0/0x40 returned 0 after 7 usecs
+0 calling memblock_init_debugfs+0x0/0x80 @ 1
+0 initcall memblock_init_debugfs+0x0/0x80 returned 0 after 30 usecs
+0 calling init_emergency_pool+0x0/0x78 @ 1
+0 highmem bounce pool size: 64 pages
+0 initcall init_emergency_pool+0x0/0x78 returned 0 after 165 usecs
+0.01 calling slab_sysfs_init+0x0/0x118 @ 1
+0 initcall slab_sysfs_init+0x0/0x118 returned 0 after 9488 usecs
+0 calling cma_bf_module_init+0x0/0x1c @ 1
+0 initcall cma_bf_module_init+0x0/0x1c returned 0 after 4 usecs
+0.001 calling fcntl_init+0x0/0x48 @ 1
+0 initcall fcntl_init+0x0/0x48 returned 0 after 11 usecs
+0 calling proc_filesystems_init+0x0/0x40 @ 1
+0 initcall proc_filesystems_init+0x0/0x40 returned 0 after 10 usecs
+0 calling dio_init+0x0/0x48 @ 1
+0 initcall dio_init+0x0/0x48 returned 0 after 12 usecs
+0 calling fsnotify_mark_init+0x0/0x48 @ 1
+0 initcall fsnotify_mark_init+0x0/0x48 returned 0 after 62 usecs
+0.001 calling inotify_user_setup+0x0/0x80 @ 1
+0 initcall inotify_user_setup+0x0/0x80 returned 0 after 251 usecs
+0 calling proc_locks_init+0x0/0x40 @ 1
+0 initcall proc_locks_init+0x0/0x40 returned 0 after 9 usecs
+0 calling proc_cmdline_init+0x0/0x40 @ 1
+0 initcall proc_cmdline_init+0x0/0x40 returned 0 after 7 usecs
+0.001 calling proc_consoles_init+0x0/0x40 @ 1
+0 initcall proc_consoles_init+0x0/0x40 returned 0 after 7 usecs
+0 calling proc_cpuinfo_init+0x0/0x40 @ 1
+0 initcall proc_cpuinfo_init+0x0/0x40 returned 0 after 8 usecs
+0 calling proc_devices_init+0x0/0x40 @ 1
+0 initcall proc_devices_init+0x0/0x40 returned 0 after 7 usecs
+0 calling proc_interrupts_init+0x0/0x40 @ 1
+0 initcall proc_interrupts_init+0x0/0x40 returned 0 after 7 usecs
+0.001 calling proc_loadavg_init+0x0/0x40 @ 1
+0 initcall proc_loadavg_init+0x0/0x40 returned 0 after 7 usecs
+0 calling proc_meminfo_init+0x0/0x40 @ 1
+0 initcall proc_meminfo_init+0x0/0x40 returned 0 after 6 usecs
+0 calling proc_stat_init+0x0/0x40 @ 1
+0 initcall proc_stat_init+0x0/0x40 returned 0 after 6 usecs
+0 calling proc_uptime_init+0x0/0x40 @ 1
+0 initcall proc_uptime_init+0x0/0x40 returned 0 after 6 usecs
+0.001 calling proc_version_init+0x0/0x40 @ 1
+0 initcall proc_version_init+0x0/0x40 returned 0 after 10 usecs
+0 calling proc_softirqs_init+0x0/0x40 @ 1
+0 initcall proc_softirqs_init+0x0/0x40 returned 0 after 7 usecs
+0 calling proc_kmsg_init+0x0/0x40 @ 1
+0 initcall proc_kmsg_init+0x0/0x40 returned 0 after 7 usecs
+0 calling proc_page_init+0x0/0x60 @ 1
+0 initcall proc_page_init+0x0/0x60 returned 0 after 11 usecs
+0 calling proc_uboot_version_init+0x0/0x40 @ 1
+0.001 initcall proc_uboot_version_init+0x0/0x40 returned 0 after 7 usecs
+0 calling proc_uboot_version_init+0x0/0x40 @ 1
+0 initcall proc_uboot_version_init+0x0/0x40 returned 0 after 7 usecs
+0 calling init_devpts_fs+0x0/0x70 @ 1
+0 initcall init_devpts_fs+0x0/0x70 returned 0 after 79 usecs
+0.002 calling ext4_init_fs+0x0/0xa0 @ 1
+0 initcall ext4_init_fs+0x0/0xa0 returned 0 after 1472 usecs
+0.001 calling journal_init+0x0/0x44 @ 1
+0 initcall journal_init+0x0/0x44 returned 0 after 951 usecs
+0 calling init_ramfs_fs+0x0/0x1c @ 1
+0 initcall init_ramfs_fs+0x0/0x1c returned 0 after 5 usecs
+0.001 calling init_fat_fs+0x0/0x78 @ 1
+0 initcall init_fat_fs+0x0/0x78 returned 0 after 445 usecs
+0 calling init_vfat_fs+0x0/0x30 @ 1
+0 initcall init_vfat_fs+0x0/0x30 returned 0 after 5 usecs
+0 calling init_msdos_fs+0x0/0x30 @ 1
+0.001 initcall init_msdos_fs+0x0/0x30 returned 0 after 4 usecs
+0 calling init_nls_cp437+0x0/0x1c @ 1
+0 initcall init_nls_cp437+0x0/0x1c returned 0 after 2 usecs
+0 calling init_nls_ascii+0x0/0x1c @ 1
+0 initcall init_nls_ascii+0x0/0x1c returned 0 after 2 usecs
+0 calling init_nls_iso8859_1+0x0/0x1c @ 1
+0 initcall init_nls_iso8859_1+0x0/0x1c returned 0 after 2 usecs
+0 calling init_nls_utf8+0x0/0x38 @ 1
+0.001 initcall init_nls_utf8+0x0/0x38 returned 0 after 2 usecs
+0 calling init_cifs+0x0/0x218 @ 1
+0 initcall init_cifs+0x0/0x218 returned 0 after 632 usecs
+0 calling fuse_init+0x0/0x1b8 @ 1
+0.001 fuse init (API version 7.18)
+0 initcall fuse_init+0x0/0x1b8 returned 0 after 696 usecs
+0 calling ipc_init+0x0/0x2c @ 1
+0.001 msgmni has been set to 933
+0 initcall ipc_init+0x0/0x2c returned 0 after 160 usecs
+0 calling ipc_sysctl_init+0x0/0x20 @ 1
+0 initcall ipc_sysctl_init+0x0/0x20 returned 0 after 24 usecs
+0 calling crypto_wq_init+0x0/0x54 @ 1
+0 initcall crypto_wq_init+0x0/0x54 returned 0 after 88 usecs
+0 calling crypto_algapi_init+0x0/0x18 @ 1
+0.001 initcall crypto_algapi_init+0x0/0x18 returned 0 after 9 usecs
+0 calling skcipher_module_init+0x0/0x50 @ 1
+0 initcall skcipher_module_init+0x0/0x50 returned 0 after 1 usecs
+0 calling chainiv_module_init+0x0/0x1c @ 1
+0 initcall chainiv_module_init+0x0/0x1c returned 0 after 5 usecs
+0 calling eseqiv_module_init+0x0/0x1c @ 1
+0 initcall eseqiv_module_init+0x0/0x1c returned 0 after 4 usecs
+0 calling seqiv_module_init+0x0/0x1c @ 1
+0 initcall seqiv_module_init+0x0/0x1c returned 0 after 3 usecs
+0.001 calling hmac_module_init+0x0/0x1c @ 1
+0 initcall hmac_module_init+0x0/0x1c returned 0 after 4 usecs
+0 calling md4_mod_init+0x0/0x1c @ 1
+0 initcall md4_mod_init+0x0/0x1c returned 0 after 117 usecs
+0 calling md5_mod_init+0x0/0x1c @ 1
+0 initcall md5_mod_init+0x0/0x1c returned 0 after 154 usecs
+0.001 calling sha1_generic_mod_init+0x0/0x1c @ 1
+0 initcall sha1_generic_mod_init+0x0/0x1c returned 0 after 154 usecs
+0 calling sha256_generic_mod_init+0x0/0x44 @ 1
+0 initcall sha256_generic_mod_init+0x0/0x44 returned 0 after 302 usecs
+0.001 calling crypto_ecb_module_init+0x0/0x1c @ 1
+0 initcall crypto_ecb_module_init+0x0/0x1c returned 0 after 4 usecs
+0 calling crypto_cbc_module_init+0x0/0x1c @ 1
+0 initcall crypto_cbc_module_init+0x0/0x1c returned 0 after 4 usecs
+0 calling crypto_ctr_module_init+0x0/0x44 @ 1
+0 initcall crypto_ctr_module_init+0x0/0x44 returned 0 after 6 usecs
+0.001 calling des_generic_mod_init+0x0/0x44 @ 1
+0 initcall des_generic_mod_init+0x0/0x44 returned 0 after 261 usecs
+0 calling twofish_mod_init+0x0/0x1c @ 1
+0 initcall twofish_mod_init+0x0/0x1c returned 0 after 151 usecs
+0 calling aes_init+0x0/0x1c @ 1
+0 initcall aes_init+0x0/0x1c returned 0 after 113 usecs
+0.001 calling arc4_init+0x0/0x1c @ 1
+0 initcall arc4_init+0x0/0x1c returned 0 after 112 usecs
+0 calling deflate_mod_init+0x0/0x1c @ 1
+0 initcall deflate_mod_init+0x0/0x1c returned 0 after 112 usecs
+0 calling crc32c_mod_init+0x0/0x1c @ 1
+0.001 initcall crc32c_mod_init+0x0/0x1c returned 0 after 151 usecs
+0 calling crypto_authenc_module_init+0x0/0x1c @ 1
+0 initcall crypto_authenc_module_init+0x0/0x1c returned 0 after 4 usecs
+0 calling crypto_authenc_esn_module_init+0x0/0x1c @ 1
+0 initcall crypto_authenc_esn_module_init+0x0/0x1c returned 0 after 4 usecs
+0 calling krng_mod_init+0x0/0x1c @ 1
+0 initcall krng_mod_init+0x0/0x1c returned 0 after 117 usecs
+0.001 calling prng_mod_init+0x0/0x1c @ 1
+0 initcall prng_mod_init+0x0/0x1c returned 0 after 151 usecs
+0 calling proc_genhd_init+0x0/0x60 @ 1
+0 initcall proc_genhd_init+0x0/0x60 returned 0 after 15 usecs
+0 calling noop_init+0x0/0x1c @ 1
+0 io scheduler noop registered
+0 initcall noop_init+0x0/0x1c returned 0 after 139 usecs
+0.001 calling cfq_init+0x0/0xa0 @ 1
+0 io scheduler cfq registered (default)
+0.001 initcall cfq_init+0x0/0xa0 returned 0 after 859 usecs
+0 calling libcrc32c_mod_init+0x0/0x40 @ 1
+0 initcall libcrc32c_mod_init+0x0/0x40 returned 0 after 7 usecs
+0 calling init_kmp+0x0/0x1c @ 1
+0 initcall init_kmp+0x0/0x1c returned 0 after 2 usecs
+0 calling init_bm+0x0/0x1c @ 1
+0 initcall init_bm+0x0/0x1c returned 0 after 2 usecs
+0 calling init_fsm+0x0/0x1c @ 1
+0 initcall init_fsm+0x0/0x1c returned 0 after 2 usecs
+0.001 calling percpu_counter_startup+0x0/0x24 @ 1
+0 initcall percpu_counter_startup+0x0/0x24 returned 0 after 3 usecs
+0 calling arizona_gpio_driver_init+0x0/0x1c @ 1
+0 initcall arizona_gpio_driver_init+0x0/0x1c returned 0 after 243 usecs
+0.002 calling tps65132_i2c_driver_init+0x0/0x20 @ 1
+0 tps-vol 14-003e: TPS65132 register OK.
+0 initcall tps65132_i2c_driver_init+0x0/0x20 returned 0 after 1699 usecs
+0.001 calling s3c_fb_init+0x0/0x1c @ 1
+0.09 s3c-fb exynos5-fb.1: all clocks are ready!
+0 s3c-fb exynos5-fb.1: pm_stay_awake
+0.001 s3c-fb exynos5-fb.1: window 0: fb 
+0 initcall s3c_fb_init+0x0/0x1c returned 0 after 89368 usecs
+0.038 calling s5p_mipi_dsi_register+0x0/0x20 @ 1
+0.281 JDI Module.
+0.001 s5p-mipi-dsim s5p-mipi-dsim.1: mipi-dsi driver(RGB mode) has been probed.
+0 initcall s5p_mipi_dsi_register+0x0/0x20 returned 0 after 312141 usecs
+0 calling platform_lcd_driver_init+0x0/0x1c @ 1
+0 initcall platform_lcd_driver_init+0x0/0x1c returned 0 after 268 usecs
+0.003 calling lm3695_driver_init+0x0/0x20 @ 1
+0 bl-lm3695 9-0063: TI backlight driver registerred OK!
+0.001 initcall lm3695_driver_init+0x0/0x20 returned 0 after 2975 usecs
+0.008 calling pl330_driver_init+0x0/0x1c @ 1
+0 dma-pl330 dma-pl330.0: Loaded driver for PL330 DMAC-267056
+0.008 dma-pl330 dma-pl330.0: 	DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+0 dma-pl330 dma-pl330.1: Loaded driver for PL330 DMAC-267056
+0.002 dma-pl330 dma-pl330.1: 	DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+0 dma-pl330 dma-pl330.2: Loaded driver for PL330 DMAC-267056
+0.001 dma-pl330 dma-pl330.2: 	DBUFF-64x8bytes Num_Chans-8 Num_Peri-1 Num_Events-32
+0 initcall pl330_driver_init+0x0/0x1c returned 0 after 18490 usecs
+0 calling arizona_micsupp_driver_init+0x0/0x1c @ 1
+0 initcall arizona_micsupp_driver_init+0x0/0x1c returned 0 after 251 usecs
+0.001 calling arizona_ldo1_driver_init+0x0/0x1c @ 1
+0 initcall arizona_ldo1_driver_init+0x0/0x1c returned 0 after 266 usecs
+0 calling pty_init+0x0/0x18 @ 1
+0 initcall pty_init+0x0/0x18 returned 0 after 319 usecs
+0.001 calling sysrq_init+0x0/0xac @ 1
+0 initcall sysrq_init+0x0/0xac returned 0 after 18 usecs
+0 calling s3c24xx_serial_modinit+0x0/0x44 @ 1
+0 exynos4210-uart.0: ttySAC0 at MMIO 0x12c00000 (irq = 83) is a S3C6400/10
+0.001 exynos4210-uart.1: ttySAC1 at MMIO 0x12c10000 (irq = 84) is a S3C6400/10
+0 exynos4210-uart.2: ttySAC2 at MMIO 0x12c20000 (irq = 85) is a S3C6400/10
+4.702 exynos4210-uart.3: ttySAC3 at MMIO 0x12c30000 (irq = 86) is a S3C6400/10
+0.004 console [ttySAC3] enabled
+0.008 initcall s3c24xx_serial_modinit+0x0/0x44 returned 0 after 4597006 usecs
+0.005 calling rand_initialize+0x0/0x34 @ 1
+0.006 initcall rand_initialize+0x0/0x34 returned 0 after 42 usecs
+0.006 calling ion_page_pool_init+0x0/0x40 @ 1
+0.007 initcall ion_page_pool_init+0x0/0x40 returned 0 after 3 usecs
+0.005 calling PVRCore_Init+0x0/0x210 @ 1
+0.007 ion_device_add_heap: can not insert multiple heaps with id 1
+0.007 ion_device_add_heap: can not insert multiple heaps with id 0
+0.005 PVR_K: PVRSRVDriverProbe(pDevice=c0896af0)
+0.006 PVR_K: SysInitialise: start
+0.006 PVR_K: G3D DVFS Info: Level:0, Clock:532 MHz, Voltage:1075000 uV
+0.007 PVR_K: G3D DVFS Info: Level:1, Clock:480 MHz, Voltage:1037500 uV
+0.007 PVR_K: G3D DVFS Info: Level:2, Clock:350 MHz, Voltage:925000 uV
+0.008 PVR_K: G3D DVFS Info: Level:3, Clock:266 MHz, Voltage:900000 uV
+0.007 PVR_K: G3D DVFS Info: Level:4, Clock:177 MHz, Voltage:900000 uV
+0.007 PVR_K: enable_gpu_power off fail with pm_runtime_suspended
+0.005 PVR_K: SysInitialise: end
+0.006 initcall PVRCore_Init+0x0/0x210 returned 0 after 70454 usecs
+0.005 calling topology_sysfs_init+0x0/0x88 @ 1
+0.008 initcall topology_sysfs_init+0x0/0x88 returned 0 after 79 usecs
+0.005 calling sw_sync_device_init+0x0/0x1c @ 1
+0.007 initcall sw_sync_device_init+0x0/0x1c returned 0 after 365 usecs
+0.056 calling brd_init+0x0/0x1dc @ 1
+0.002 brd: module loaded
+0.007 initcall brd_init+0x0/0x1dc returned 0 after 51919 usecs
+0.012 calling loop_init+0x0/0x130 @ 1
+0.002 loop: module loaded
+0.006 initcall loop_init+0x0/0x130 returned 0 after 9210 usecs
+0.005 calling uid_stat_init+0x0/0x4c @ 1
+0.007 initcall uid_stat_init+0x0/0x4c returned 0 after 16 usecs
+0.005 calling max77665_muic_init+0x0/0x44 @ 1
+0.004 func:max77665_muic_init
+0.019 func:max77665_muic_probe
+0.002 adc 0x1f, adclow 1, adcerr 0, adc1k 0
+0 initcall max77665_muic_init+0x0/0x44 returned 0 after 24206 usecs
+0.008 calling arizona_spi_driver_init+0x0/0x1c @ 1
+0 async_waiting @ 1
+0 calling 1_regulator_bulk_enable_async+0x0/0x20 @ 5
+0 initcall 1_regulator_bulk_enable_async+0x0/0x20 returned 0 after 283 usecs
+0.007 async_continuing @ 1 after 370 usec
+0.005 MUIC switch to --> USB
+0.015 arizona spi1.0: WM5102 revision C
+0.007 initcall arizona_spi_driver_init+0x0/0x1c returned 0 after 34189 usecs
+0.084 calling mx_hub_init+0x0/0x20 @ 1
+0.004 adc 0x11, adclow 1, adcerr 0, adc1k 0
+0.091 MUIC switch to --> Uart
+0.006 mx_hub 18-0043: Boot info :0x5A 0x03 0x01 0x00 0xBB 0x45 0x00 0x42 
+0.12 mx_hub 18-0043: mx_hub id 0x5A firmware version 0.3
+0.006 initcall mx_hub_init+0x0/0x20 returned 0 after 293633 usecs
+0.005 calling bcm2079x_dev_init+0x0/0x20 @ 1
+0.008 bcm2079x-i2c 16-0077: bcm2079x_probe, probing bcm2079x driver flags = 0
+0.007 bcm2079x-i2c 16-0077: bcm2079x_probe, saving address 0x77
+0.007 bcm2079x-i2c 16-0077: requesting IRQ 540 with IRQF_NO_SUSPEND
+0.004 wake enabled for irq 540
+0.009 bcm2079x-i2c 16-0077: bcm2079x_probe, probing bcm2079x driver exited successfully
+0.007 initcall bcm2079x_dev_init+0x0/0x20 returned 0 after 33967 usecs
+0.004 calling init_sd+0x0/0x60 @ 1
+0.006 initcall init_sd+0x0/0x60 returned 0 after 380 usecs
+0.005 calling init_sg+0x0/0x78 @ 1
+0.006 initcall init_sg+0x0/0x78 returned 0 after 210 usecs
+0.005 calling net_olddevs_init+0x0/0x2c @ 1
+0.007 initcall net_olddevs_init+0x0/0x2c returned 0 after 14 usecs
+0.005 calling tun_init+0x0/0x94 @ 1
+0.005 tun: Universal TUN/TAP device driver, 1.6
+0.007 tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+0.006 initcall tun_init+0x0/0x94 returned 0 after 12007 usecs
+0.005 calling ppp_init+0x0/0xf4 @ 1
+0.005 PPP generic driver version 2.4.2
+0.006 initcall ppp_init+0x0/0xf4 returned 0 after 5049 usecs
+0.005 calling ppp_async_init+0x0/0x3c @ 1
+0.006 initcall ppp_async_init+0x0/0x3c returned 0 after 2 usecs
+0.005 calling bsdcomp_init+0x0/0x34 @ 1
+0.005 PPP BSD Compression module registered
+0.007 initcall bsdcomp_init+0x0/0x34 returned 0 after 4853 usecs
+0.005 calling deflate_init+0x0/0x40 @ 1
+0.005 PPP Deflate Compression module registered
+0.007 initcall deflate_init+0x0/0x40 returned 0 after 5305 usecs
+0.005 calling ppp_mppe_init+0x0/0xd8 @ 1
+0.005 PPP MPPE Compression module registered
+0.007 initcall ppp_mppe_init+0x0/0xd8 returned 0 after 4935 usecs
+0.005 calling ppp_sync_init+0x0/0x3c @ 1
+0.006 initcall ppp_sync_init+0x0/0x3c returned 0 after 2 usecs
+0.005 calling pppox_init+0x0/0x1c @ 1
+0.005 NET: Registered protocol family 24
+0.006 initcall pppox_init+0x0/0x1c returned 0 after 4715 usecs
+0.005 calling pppoe_init+0x0/0x8c @ 1
+0.007 initcall pppoe_init+0x0/0x8c returned 0 after 22 usecs
+0.004 calling pppolac_init+0x0/0x68 @ 1
+0.007 initcall pppolac_init+0x0/0x68 returned 0 after 2 usecs
+0.005 calling pppopns_init+0x0/0x68 @ 1
+0.006 initcall pppopns_init+0x0/0x68 returned 0 after 2 usecs
+0.006 calling exynos_drd_driver_init+0x0/0x1c @ 1
+0.006 [usb] exynos_drd_switch_reset, vbus: 0, id: 1
+0.005 exynos_drd_switch_init, setting vbus irq: 531
+0.005 wake enabled for irq 531
+0.004 exynos-drd exynos-dwc3.1: dummy
+0.008 initcall exynos_drd_driver_init+0x0/0x1c returned 0 after 19606 usecs
+0.005 calling ehci_hcd_init+0x0/0x90 @ 1
+0.007 ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+0.005 s5p-ehci s5p-ehci: S5P EHCI Host Controller
+0.007 s5p-ehci s5p-ehci: new USB bus registered, assigned bus number 1
+0.012 s5p-ehci s5p-ehci: irq 103, io mem 0x12110000
+0.005 s5p-ehci s5p-ehci: USB 0.0 started, EHCI 1.00
+0.003 hub 1-0:1.0: USB hub found
+0.005 hub 1-0:1.0: 3 ports detected
+0.007 initcall ehci_hcd_init+0x0/0x90 returned 0 after 43624 usecs
+0.005 calling xhci_hcd_init+0x0/0x40 @ 1
+0.006 exynos-xhci exynos-xhci.0: EXYNOS xHCI Host Controller
+0.008 exynos-xhci exynos-xhci.0: new USB bus registered, assigned bus number 2
+0.007 exynos-xhci exynos-xhci.0: irq 104, io mem 0x12000000
+0 xHCI xhci_add_endpoint called for root hub
+0 xHCI xhci_check_bandwidth called for root hub
+0.003 hub 2-0:1.0: USB hub found
+0.005 hub 2-0:1.0: 1 port detected
+0.006 exynos-xhci exynos-xhci.0: EXYNOS xHCI Host Controller
+0.009 exynos-xhci exynos-xhci.0: new USB bus registered, assigned bus number 3
+0 xHCI xhci_add_endpoint called for root hub
+0 xHCI xhci_check_bandwidth called for root hub
+0.003 hub 3-0:1.0: USB hub found
+0.005 hub 3-0:1.0: 1 port detected
+0.007 initcall xhci_hcd_init+0x0/0x40 returned 0 after 51600 usecs
+0.004 calling usb_stor_init+0x0/0x5c @ 1
+0.006 Initializing USB Mass Storage driver...
+0.006 usbcore: registered new interface driver usb-storage
+0.005 USB Mass Storage support registered.
+0.007 initcall usb_stor_init+0x0/0x5c returned 0 after 16089 usecs
+0.006 calling exynos_ss_udc_driver_init+0x0/0x1c @ 1
+0.007 exynos-ss-udc exynos-ss-udc.0: regs df8e2000, irq 104
+0.007 initcall exynos_ss_udc_driver_init+0x0/0x1c returned 0 after 6897 usecs
+0.005 calling init+0x0/0x4c @ 1
+0.006 file system registered
+0.005 gadget: Mass Storage Function, version: 2009/09/11
+0.004 gadget: Number of LUNs=1
+0.006 lun0: LUN: removable file: (no medium)
+0.004 gadget: android_usb ready
+0.006 exynos-ss-udc exynos-ss-udc.0: bound driver android_usb
+0.006 initcall init+0x0/0x4c returned 0 after 31416 usecs
+0.005 calling serport_init+0x0/0x38 @ 1
+0.007 initcall serport_init+0x0/0x38 returned 0 after 2 usecs
+0.005 calling mousedev_init+0x0/0x90 @ 1
+0.006 mousedev: PS/2 mouse device common for all mice
+0.007 initcall mousedev_init+0x0/0x90 returned 0 after 5711 usecs
+0.004 calling evdev_init+0x0/0x1c @ 1
+0.007 initcall evdev_init+0x0/0x1c returned 0 after 3 usecs
+0.004 calling atkbd_init+0x0/0x28 @ 1
+0.007 initcall atkbd_init+0x0/0x28 returned 0 after 215 usecs
+0.005 calling mx_tpi_init+0x0/0x1c @ 1
+0.01 input: mxhub-keys as /devices/platform/i2c-gpio.18/i2c-18/18-0043/mx_tpi/input/input0
+0.005 initcall mx_tpi_init+0x0/0x1c returned 0 after 9991 usecs
+0.006 calling gpio_event_init+0x0/0x1c @ 1
+0.006 initcall gpio_event_init+0x0/0x1c returned 0 after 289 usecs
+0.006 calling keychord_init+0x0/0x1c @ 1
+0.006 initcall keychord_init+0x0/0x1c returned 0 after 297 usecs
+0.005 calling uinput_init+0x0/0x1c @ 1
+0.007 initcall uinput_init+0x0/0x1c returned 0 after 360 usecs
+0.004 calling gp2ap_init+0x0/0x34 @ 1
+0.005 gp2ap_init:###########
+0.008 input: gp2ap as /devices/platform/i2c-gpio.15/i2c-15/15-0039/input/input1
+0.003 gp2ap sensor probed !
+0.006 initcall gp2ap_init+0x0/0x34 returned 0 after 15497 usecs
+0.006 calling akm_compass_init+0x0/0x1c @ 1
+0.011 mx-hub-compass mx-hub-compass: start probing.
+0.05 mx_hub 18-0043: akm8963_i2c_check_device: id = 0x48.
+0.015 mx_hub 18-0043: akm8963_i2c_check_device: sense_conf = 0xA2 0xA3 0x9C .
+0.006 input: compass as /devices/virtual/input/input2
+0.005 mx-hub-compass mx-hub-compass: successfully probed.
+0.007 initcall akm_compass_init+0x0/0x1c returned 0 after 85575 usecs
+0.006 calling lsm330dlc_acc_init+0x0/0x1c @ 1
+0.021 lsm330dlc_acc: hw init start
+0.115 lsm330dlc_acc_hw_init called, read device id 0x33
+0.025 input: lsm330dlc_acc as /devices/platform/i2c-gpio.18/i2c-18/18-0043/input/input3
+0.006 initcall lsm330dlc_acc_init+0x0/0x1c returned 0 after 157397 usecs
+0.124 calling lsm330dlc_gyr_init+0x0/0x1c @ 1
+0.025 input: lsm330dlc_gyr as /devices/platform/i2c-gpio.18/i2c-18/18-0043/input/input4
+0.006 initcall lsm330dlc_gyr_init+0x0/0x1c returned 0 after 140123 usecs
+1.004 calling synaptics_rmi4_init+0x0/0x30 @ 1
+0.005 exynos5-i2c exynos5-hs-i2c.3: tx timeout
+0.118 synaptics_dsx_i2c 7-0020: synaptics_rmi4_reset_command: Find F01 in page description table 0x94
+0.009 input: mx_ts as /devices/platform/exynos5-hs-i2c.3/i2c-7/7-0020/input/input5
+0.007 initcall synaptics_rmi4_init+0x0/0x30 returned 0 after 1104375 usecs
+0.005 calling rmidev_module_init+0x0/0x40 @ 1
+0.007 initcall rmidev_module_init+0x0/0x40 returned 0 after 3 usecs
+0.006 calling rmi4_fw_update_module_init+0x0/0x44 @ 1
+0.008 initcall rmi4_fw_update_module_init+0x0/0x44 returned 0 after 2 usecs
+0.005 calling rmi4_f54_module_init+0x0/0x44 @ 1
+0.008 initcall rmi4_f54_module_init+0x0/0x44 returned 0 after 2 usecs
+0.005 calling rmi4_f51_module_init+0x0/0x40 @ 1
+0.007 initcall rmi4_f51_module_init+0x0/0x40 returned 0 after 2 usecs
+0.006 calling alarm_driver_init+0x0/0xe0 @ 1
+0.007 initcall alarm_driver_init+0x0/0xe0 returned 0 after 330 usecs
+0.005 calling alarm_dev_init+0x0/0x74 @ 1
+0.007 initcall alarm_dev_init+0x0/0x74 returned 0 after 418 usecs
+0.005 calling max77802_rtc_init+0x0/0x1c @ 1
+0.01 max77802_rtc_probe
+0.015 max77802_rtc_init_reg:alm2: 14/1/2 22:44:0(16)
+0.025 max77802-rtc max77802-rtc: max77802_rtc_init_reg: bypass init
+0.016 max77802_rtc_read_alarm: 114/0/2 9:1:25(4)
+0.004 using rtc device, max77802-rtc, for alarms
+0.009 max77802-rtc max77802-rtc: rtc core: registered max77802-rtc as rtc0
+0.006 initcall max77802_rtc_init+0x0/0x1c returned 0 after 76896 usecs
+0.006 calling s2mps11_rtc_init+0x0/0x1c @ 1
+0.006 initcall s2mps11_rtc_init+0x0/0x1c returned 0 after 319 usecs
+0.005 calling i2c_dev_init+0x0/0xd8 @ 1
+0.008 i2c /dev entries driver
+0.006 initcall i2c_dev_init+0x0/0xd8 returned 0 after 8146 usecs
+0.005 calling ms2r_module_init+0x0/0x20 @ 1
+0.007 initcall ms2r_module_init+0x0/0x20 returned 0 after 282 usecs
+0.005 calling ms2r_is_spi_init+0x0/0x38 @ 1
+0.009 ms2r_spi spi0.0: ms2r_spi_probe(), utilize SPI0 at frequence 25000000Hz
+0.006 initcall ms2r_is_spi_init+0x0/0x38 returned 0 after 8146 usecs
+0.006 calling s5pcsis_driver_init+0x0/0x1c @ 1
+0.011 s5p-mipi-csis s5p-mipi-csis.0: s5pcsis_probe(), lanes: 4, alignment: 32, hs_settle: 8, fixed_phy_vdd: 0
+0 s5p-mipi-csis.0
+0.008 : s5pcsis_probe : csis0 probe success
+0.011 s5p-mipi-csis s5p-mipi-csis.1: s5pcsis_probe(), lanes: 2, alignment: 32, hs_settle: 12, fixed_phy_vdd: 0
+0 s5p-mipi-csis.1
+0.008 : s5pcsis_probe : csis1 probe success
+0.011 s5p-mipi-csis s5p-mipi-csis.2: s5pcsis_probe(), lanes: 2, alignment: 32, hs_settle: 12, fixed_phy_vdd: 0
+0 s5p-mipi-csis.2
+0.008 : s5pcsis_probe : csis2 probe success
+0.007 initcall s5pcsis_driver_init+0x0/0x1c returned 0 after 55871 usecs
+0.005 calling flite_driver_init+0x0/0x1c @ 1
+0.007 exynos-fimc-lite exynos-fimc-lite.0: flite_probe() entered
+0.009 exynos-fimc-lite exynos-fimc-lite.0: pdata: num_clients 1, active_cam_index 0
+0.006 [INFO]flite_probe:2670: mdev = 0xdeb82000
+0.009 exynos-fimc-lite exynos-fimc-lite.0: flite_register_video_device(), We use VIDOC_S_CTRL instead
+0.012 exynos-fimc-lite exynos-fimc-lite.0: flite_register_sensor(), bus_num: 0,client name: ms2r, client address: 0x1f
+0.005 ms2r 0-001f: ms2r_probe() entered
+0.004 ms2r_probe(), will allocate mem
+0.004 ms2r_allocate_fw_mem(), ok!
+0.005 ms2r 0-001f: ms2r has been probed
+0.009 flite_register_sensor(), sensor subdev sd address 0xde351018, sd->host_priv is 0x (null)
+0.01 flite_register_sensor(), sensor subdev sd address 0xde351018, sd->host_priv is 0xde389c1c
+0.006 exynos-mdev.1: Registered sensor subdevice ms2r
+0.006 [INFO]flite_probe:2724: FIMC-LITE0 probe success
+0.007 exynos-fimc-lite exynos-fimc-lite.1: flite_probe() entered
+0.008 exynos-fimc-lite exynos-fimc-lite.1: pdata: num_clients 0, active_cam_index 0
+0.006 [INFO]flite_probe:2670: mdev = 0xdeb82000
+0.01 exynos-fimc-lite exynos-fimc-lite.1: flite_register_video_device(), We use VIDOC_S_CTRL instead
+0.006 [INFO]flite_probe:2724: FIMC-LITE1 probe success
+0.006 exynos-fimc-lite exynos-fimc-lite.2: flite_probe() entered
+0.009 exynos-fimc-lite exynos-fimc-lite.2: pdata: num_clients 0, active_cam_index 0
+0.006 [INFO]flite_probe:2670: mdev = 0xdeb82000
+0.009 exynos-fimc-lite exynos-fimc-lite.2: flite_register_video_device(), We use VIDOC_S_CTRL instead
+0.007 [INFO]flite_probe:2724: FIMC-LITE2 probe success
+0.007 initcall flite_driver_init+0x0/0x1c returned 0 after 161329 usecs
+0.006 calling gsc_driver_init+0x0/0x1c @ 1
+0.006 [INFO]gsc_probe:1572: gsc-0 registered successfully
+0.003 ~~~ Attention please! ~~~~
+0 exynos-gsc exynos-gsc.1: gsc_cap_register_sensor(): sd(0xde351018)'s host_priv has already
+0 been set to 0xde389c1c in FIMC-LITE driver!!!
+0.027 Consequently I will NOT change it to 0xde3521f8 in case of FIMC-LITE driver being contaminated!!!
+0.007 [INFO]gsc_probe:1572: gsc-1 registered successfully
+0.006 [INFO]gsc_probe:1572: gsc-2 registered successfully
+0.013 exynos-gsc exynos-gsc.3: register subdev nodes
+0.005 [INFO]gsc_probe:1572: gsc-3 registered successfully
+0.007 initcall gsc_driver_init+0x0/0x1c returned 0 after 66687 usecs
+0.005 calling sc_driver_init+0x0/0x1c @ 1
+0.006 exynos5-scaler exynos5-scaler.0: ++sc_probe
+0.007 exynos5-scaler exynos5-scaler.0: failed to get pclk for scaler
+0.007 initcall sc_driver_init+0x0/0x1c returned 0 after 12825 usecs
+0.004 calling jpeg_init+0x0/0x48 @ 1
+0.005 Initialize JPEG driver
+0.007 s5p-jpeg s5p-jpeg: JPEG driver is registered to /dev/video12
+0.006 s5p-jpeg s5p-jpeg: JPEG driver is registered to /dev/video11
+0.007 initcall jpeg_init+0x0/0x48 returned 0 after 17605 usecs
+0.005 calling fimg2d_register+0x0/0x30 @ 1
+0.007 Exynos Graphics 2D driver, (c) 2011 Samsung Electronics
+0.005 [fimg2d_probe] base address: 0x10850000
+0.003 [fimg2d_probe] irq: 123
+0.007 [fimg2d_clk_setup] aclk_acp(266000000) pclk_acp(133000000)
+0.005 [fimg2d_clk_setup] gate clk: fimg2d
+0.005 [fimg2d_probe] enable runtime pm
+0.007 [fimg2d_probe] register sysmmu page fault handler
+0.006 initcall fimg2d_register+0x0/0x30 returned 0 after 37824 usecs
+0.005 calling s5p_mfc_init+0x0/0x48 @ 1
+0.006 EXYNOS MFC V4L2 Driver, (c) 2010 Samsung Electronics
+0.001 s5p-mfc s5p-mfc-v6: s5p_mfc_probe()
+0.006 s5p-mfc s5p-mfc-v6: decoder registered as /dev/video6
+0.006 s5p-mfc s5p-mfc-v6: encoder registered as /dev/video7
+0.001 s5p_mfc_probe--
+0.006 initcall s5p_mfc_init+0x0/0x48 returned 0 after 19439 usecs
+0.005 calling hdcp_init+0x0/0x20 @ 1
+0.006 i2c-core: driver [exynos_hdcp] using legacy suspend method
+0.007 i2c-core: driver [exynos_hdcp] using legacy resume method
+0.007 initcall hdcp_init+0x0/0x20 returned 0 after 13366 usecs
+0.004 calling hdmi_init+0x0/0x40 @ 1
+0.008 Samsung HDMI output driver, (c) 2010-2011 Samsung Electronics Co., Ltd.
+0.006 s5p-hdmi exynos5-hdmi: hdmi ip version = 2
+0.005 s5p-hdmi exynos5-hdmi: probe sucessful
+0.006 initcall hdmi_init+0x0/0x40 returned 0 after 18366 usecs
+0.005 calling edid_init+0x0/0x20 @ 1
+0.006 initcall edid_init+0x0/0x20 returned 0 after 281 usecs
+0.005 calling mxr_init+0x0/0x40 @ 1
+0.008 Samsung TV Mixer driver, (c) 2010-2011 Samsung Electronics Co., Ltd.
+0.004 s5p-mixer s5p-mixer: probe start
+0.006 s5p-mixer s5p-mixer: mixer ip version = 2
+0.005 s5p-mixer s5p-mixer: resources acquired
+0.009 s5p-mixer s5p-mixer: added output 'S5P HDMI connector' from module 's5p-hdmi'
+0.007 s5p-mixer s5p-mixer: registered layer mxr0_graph0 as /dev/video16
+0.008 s5p-mixer s5p-mixer: registered layer mxr0_graph1 as /dev/video17
+0.007 s5p-mixer s5p-mixer: registered layer mxr1_graph2 as /dev/video18
+0.007 s5p-mixer s5p-mixer: registered layer mxr1_graph3 as /dev/video19
+0.005 s5p-mixer s5p-mixer: mixer0 create links
+0.006 s5p-mixer s5p-mixer: mixer1 create links
+0.006 s5p-mixer s5p-mixer: mixer links are created successfully
+0.006 s5p-mixer s5p-mixer: probe successful
+0.006 initcall mxr_init+0x0/0x40 returned 0 after 82017 usecs
+0.005 calling rot_driver_init+0x0/0x1c @ 1
+0.005 exynos-rot exynos-rot: ++rot_probe
+0.007 exynos-rot exynos-rot: rotator registered successfully
+0.006 initcall rot_driver_init+0x0/0x1c returned 0 after 11297 usecs
+0.005 calling jpeg_hx_init+0x0/0x48 @ 1
+0.005 Initialize JPEG Hx driver
+0.008 exynos5-jpeg-hx exynos5-jpeg-hx: JPEG driver is registered to /dev/video14
+0.008 exynos5-jpeg-hx exynos5-jpeg-hx: JPEG driver is registered to /dev/video13
+0.007 initcall jpeg_hx_init+0x0/0x48 returned 0 after 20357 usecs
+0.007 calling exynos_tmu_driver_init+0x0/0x1c @ 1
+0.005 Exynos: Kernel Thermal management registered
+0.007 initcall exynos_tmu_driver_init+0x0/0x1c returned 0 after 6010 usecs
+0.005 calling watchdog_init+0x0/0x28 @ 1
+0.008 s3c2410_wdt: S3C2410 Watchdog Timer, (c) 2004 Simtec Electronics
+0.005 s3c2410-wdt s3c2410-wdt: starting watchdog timer
+0.008 s3c2410-wdt s3c2410-wdt: watchdog active, reset enabled, irq disabled
+0.007 s3c2410_wdt: start_watchdog_daemon: Start watchdog feed thread
+0.007 s3c2410_wdt: watchdog_thread: Enter into watchdog_thread
+0.007 initcall watchdog_init+0x0/0x28 returned 0 after 34387 usecs
+0.005 calling dm_init+0x0/0x68 @ 1
+0.005 device-mapper: uevent: version 1.0.3
+0.008 device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+0.006 initcall dm_init+0x0/0x68 returned 0 after 13451 usecs
+0.006 calling dm_crypt_init+0x0/0x80 @ 1
+0.006 initcall dm_crypt_init+0x0/0x80 returned 0 after 330 usecs
+0.005 calling hci_uart_init+0x0/0xe4 @ 1
+0.005 Bluetooth: HCI UART driver ver 2.2
+0 Bluetooth: HCI H4 protocol initialized
+0.01 rmi->synaptics_rmi4_fwu_init:JDI LCD
+0.007 initcall hci_uart_init+0x0/0xe4 returned 0 after 14394 usecs
+0 synaptics_dsx_i2c 7-0020: Scan PDT
+0 calling cpufreq_gov_userspace_init+0x0/0x1c @ 1
+0 initcall cpufreq_gov_userspace_init+0x0/0x1c returned 0 after 6 usecs
+0.001 calling init_ladder+0x0/0x1c @ 1
+0 cpuidle: using governor ladder
+0 initcall init_ladder+0x0/0x1c returned 0 after 585 usecs
+0.038 calling init_menu+0x0/0x1c @ 1
+0.004 cpuidle: using governor menu
+0.007 initcall init_menu+0x0/0x1c returned 0 after 41319 usecs
+0.005 calling mmc_blk_init+0x0/0x84 @ 1
+0.006 initcall mmc_blk_init+0x0/0x84 returned 0 after 284 usecs
+0.005 calling dw_mci_init+0x0/0x20 @ 1
+0.006 Synopsys Designware Multimedia Card Interface Driver
+0.007 initcall dw_mci_init+0x0/0x20 returned 0 after 6085 usecs
+0.005 calling dw_mci_init+0x0/0x24 @ 1
+0 synaptics_dsx_i2c 7-0020: fwu_read_f34_queries perm:0, bl:0, display:0
+0 dw_mmc dw_mmc.0: Using internal DMA controller.
+0.001 mmc0: no vmmc regulator found
+0.002 mmc0: no vqmmc regulator found
+0 dw_mmc dw_mmc.0: Version ID is 241a
+0 dw_mmc dw_mmc.0: DW MMC controller at irq 107, 64 bit host data width, 128 deep fifo
+0 dw_mmc dw_mmc.1: Using internal DMA controller.
+0 mmc1: no vmmc regulator found
+0.003 mmc1: no vqmmc regulator found
+0 dw_mmc dw_mmc.1: Version ID is 241a
+0.001 dw_mmc dw_mmc.1: DW MMC controller at irq 108, 64 bit host data width, 128 deep fifo
+0 initcall dw_mci_init+0x0/0x24 returned 0 after 7095 usecs
+0.001 calling torch_led_init+0x0/0x1c @ 1
+0 Registered led device: torch_led
+0.001 torch-led torch-led: probed
+0 initcall torch_led_init+0x0/0x1c returned 0 after 1669 usecs
+0.001 calling mx_hub_led_init+0x0/0x1c @ 1
+0 Registered led device: mx-led
+0.001 initcall mx_hub_led_init+0x0/0x1c returned 0 after 1822 usecs
+0 calling switch_class_init+0x0/0x50 @ 1
+0 initcall switch_class_init+0x0/0x50 returned 0 after 2 usecs
+0 calling s5p_ace_init+0x0/0x28 @ 1
+0 S5P ACE Driver, (c) 2010 Samsung Electronics
+0.001 ACE: ecb-aes-s5p-ace
+0 ACE: cbc-aes-s5p-ace
+0 ACE: ctr-aes-s5p-ace
+0 ACE: sha1-s5p-ace
+0 ACE: sha256-s5p-ace
+0.001 ACE driver is initialized
+0 initcall s5p_ace_init+0x0/0x28 returned 0 after 2248 usecs
+0 calling hid_init+0x0/0x64 @ 1
+0 initcall hid_init+0x0/0x64 returned 0 after 411 usecs
+0.001 calling uhid_init+0x0/0x1c @ 1
+0 initcall uhid_init+0x0/0x1c returned 0 after 524 usecs
+0 calling a4_init+0x0/0x28 @ 1
+0 initcall a4_init+0x0/0x28 returned 0 after 321 usecs
+0.001 calling ax_init+0x0/0x28 @ 1
+0 initcall ax_init+0x0/0x28 returned 0 after 475 usecs
+0 calling apple_init+0x0/0x40 @ 1
+0 initcall apple_init+0x0/0x40 returned 0 after 580 usecs
+0.001 calling belkin_init+0x0/0x28 @ 1
+0 initcall belkin_init+0x0/0x28 returned 0 after 581 usecs
+0.001 calling ch_init+0x0/0x28 @ 1
+0 initcall ch_init+0x0/0x28 returned 0 after 574 usecs
+0 calling ch_init+0x0/0x28 @ 1
+0 initcall ch_init+0x0/0x28 returned 0 after 559 usecs
+0.001 calling cp_init+0x0/0x28 @ 1
+0 initcall cp_init+0x0/0x28 returned 0 after 385 usecs
+0 calling dr_init+0x0/0x28 @ 1
+0 initcall dr_init+0x0/0x28 returned 0 after 482 usecs
+0.001 calling ems_init+0x0/0x28 @ 1
+0 initcall ems_init+0x0/0x28 returned 0 after 481 usecs
+0 calling elecom_init+0x0/0x28 @ 1
+0 initcall elecom_init+0x0/0x28 returned 0 after 475 usecs
+0.001 calling ez_init+0x0/0x28 @ 1
+0 initcall ez_init+0x0/0x28 returned 0 after 572 usecs
+0.001 calling gyration_init+0x0/0x28 @ 1
+0 initcall gyration_init+0x0/0x28 returned 0 after 599 usecs
+0 calling holtek_init+0x0/0x28 @ 1
+0 initcall holtek_init+0x0/0x28 returned 0 after 569 usecs
+0.001 calling ks_init+0x0/0x28 @ 1
+0 initcall ks_init+0x0/0x28 returned 0 after 475 usecs
+0 calling keytouch_init+0x0/0x28 @ 1
+0 initcall keytouch_init+0x0/0x28 returned 0 after 396 usecs
+0.001 calling kye_init+0x0/0x28 @ 1
+0 initcall kye_init+0x0/0x28 returned 0 after 476 usecs
+0 calling ts_init+0x0/0x28 @ 1
+0 initcall ts_init+0x0/0x28 returned 0 after 475 usecs
+0.001 calling lg_init+0x0/0x28 @ 1
+0 initcall lg_init+0x0/0x28 returned 0 after 480 usecs
+0 calling magicmouse_init+0x0/0x40 @ 1
+0 initcall magicmouse_init+0x0/0x40 returned 0 after 473 usecs
+0.001 calling ms_init+0x0/0x28 @ 1
+0 initcall ms_init+0x0/0x28 returned 0 after 552 usecs
+0 calling mr_init+0x0/0x28 @ 1
+0.001 initcall mr_init+0x0/0x28 returned 0 after 472 usecs
+0 calling mt_init+0x0/0x28 @ 1
+0 initcall mt_init+0x0/0x28 returned 0 after 489 usecs
+0.001 calling ntrig_init+0x0/0x28 @ 1
+0 initcall ntrig_init+0x0/0x28 returned 0 after 471 usecs
+0 calling ortek_init+0x0/0x28 @ 1
+0 initcall ortek_init+0x0/0x28 returned 0 after 434 usecs
+0.001 calling pk_init+0x0/0x44 @ 1
+0 initcall pk_init+0x0/0x44 returned 0 after 478 usecs
+0 calling pl_init+0x0/0x28 @ 1
+0 initcall pl_init+0x0/0x28 returned 0 after 470 usecs
+0.001 calling pl_init+0x0/0x28 @ 1
+0 initcall pl_init+0x0/0x28 returned 0 after 471 usecs
+0 calling picolcd_init+0x0/0x28 @ 1
+0 initcall picolcd_init+0x0/0x28 returned 0 after 470 usecs
+0 calling roccat_init+0x0/0x84 @ 1
+0 initcall roccat_init+0x0/0x84 returned 0 after 9 usecs
+0.001 calling arvo_init+0x0/0x7c @ 1
+0 initcall arvo_init+0x0/0x7c returned 0 after 862 usecs
+0.001 calling isku_init+0x0/0x7c @ 1
+0 initcall isku_init+0x0/0x7c returned 0 after 703 usecs
+0.001 calling kone_init+0x0/0x7c @ 1
+0 initcall kone_init+0x0/0x7c returned 0 after 699 usecs
+0 calling koneplus_init+0x0/0x7c @ 1
+0 initcall koneplus_init+0x0/0x7c returned 0 after 687 usecs
+0.001 calling kovaplus_init+0x0/0x7c @ 1
+0 initcall kovaplus_init+0x0/0x7c returned 0 after 696 usecs
+0.001 calling pyra_init+0x0/0x7c @ 1
+0 initcall pyra_init+0x0/0x7c returned 0 after 698 usecs
+0 calling samsung_init+0x0/0x28 @ 1
+0 initcall samsung_init+0x0/0x28 returned 0 after 362 usecs
+0.001 calling sjoy_init+0x0/0x28 @ 1
+0 initcall sjoy_init+0x0/0x28 returned 0 after 396 usecs
+0 calling sony_init+0x0/0x28 @ 1
+0 initcall sony_init+0x0/0x28 returned 0 after 373 usecs
+0 calling sp_init+0x0/0x28 @ 1
+0.001 mmc_host mmc0: Bus speed (slot 0) = 25000000Hz (slot req 400000Hz, actual 390625HZ div = 32)
+0 initcall sp_init+0x0/0x28 returned 0 after 409 usecs
+0 calling ga_init+0x0/0x28 @ 1
+0 initcall ga_init+0x0/0x28 returned 0 after 315 usecs
+0 calling tm_init+0x0/0x28 @ 1
+0 initcall tm_init+0x0/0x28 returned 0 after 238 usecs
+0.001 calling ts_init+0x0/0x28 @ 1
+0 initcall ts_init+0x0/0x28 returned 0 after 327 usecs
+0 calling twinhan_init+0x0/0x28 @ 1
+0 initcall twinhan_init+0x0/0x28 returned 0 after 328 usecs
+0.001 calling uclogic_init+0x0/0x28 @ 1
+0 initcall uclogic_init+0x0/0x28 returned 0 after 1393 usecs
+0.003 calling zp_init+0x0/0x28 @ 1
+0 initcall zp_init+0x0/0x28 returned 0 after 2222 usecs
+0 calling zc_init+0x0/0x28 @ 1
+0 initcall zc_init+0x0/0x28 returned 0 after 323 usecs
+0.001 calling wacom_init+0x0/0x40 @ 1
+0 initcall wacom_init+0x0/0x40 returned 0 after 323 usecs
+0 calling waltop_init+0x0/0x28 @ 1
+0 initcall waltop_init+0x0/0x28 returned 0 after 291 usecs
+0.001 calling hid_init+0x0/0x8c @ 1
+0 usbcore: registered new interface driver usbhid
+0 usbhid: USB HID core driver
+0 initcall hid_init+0x0/0x8c returned 0 after 669 usecs
+0 calling staging_init+0x0/0x14 @ 1
+0 initcall staging_init+0x0/0x14 returned 0 after 2 usecs
+0.001 calling binder_init+0x0/0x140 @ 1
+0 initcall binder_init+0x0/0x140 returned 0 after 843 usecs
+0.001 calling ashmem_init+0x0/0xc8 @ 1
+0 ashmem: initialized
+0 initcall ashmem_init+0x0/0xc8 returned 0 after 1175 usecs
+0 calling logger_init+0x0/0x58 @ 1
+0.001 logger: created 256K log 'log_main'
+0 logger: created 256K log 'log_events'
+0.001 logger: created 256K log 'log_radio'
+0 logger: created 256K log 'log_system'
+0 initcall logger_init+0x0/0x58 returned 0 after 2107 usecs
+0 calling timed_output_init+0x0/0x50 @ 1
+0 initcall timed_output_init+0x0/0x50 returned 0 after 288 usecs
+0.001 calling timed_gpio_init+0x0/0x1c @ 1
+0 initcall timed_gpio_init+0x0/0x1c returned 0 after 752 usecs
+0 calling lowmem_init+0x0/0x20 @ 1
+0 initcall lowmem_init+0x0/0x20 returned 0 after 6 usecs
+0.001 calling exynos5_volt_ctrl_init+0x0/0xe4 @ 1
+0 initcall exynos5_volt_ctrl_init+0x0/0xe4 returned 0 after 873 usecs
+0.001 calling modem_driver_init+0x0/0x30 @ 1
+0 initcall modem_driver_init+0x0/0x30 returned 0 after 849 usecs
+0 calling spt_spi_init+0x0/0x70 @ 1
+0 initcall spt_spi_init+0x0/0x70 returned 0 after 2 usecs
+0 calling max77665_haptic_init+0x0/0x1c @ 1
+0.002 max77665-haptic max77665-haptic: max77665_haptic_probe : MAX77665 Haptic Driver Loading
+0 initcall max77665_haptic_init+0x0/0x1c returned 0 after 1747 usecs
+0.001 calling alsa_timer_init+0x0/0xc4 @ 1
+0 initcall alsa_timer_init+0x0/0xc4 returned 0 after 641 usecs
+0 calling alsa_pcm_init+0x0/0x74 @ 1
+0 initcall alsa_pcm_init+0x0/0x74 returned 0 after 21 usecs
+0 calling snd_mem_init+0x0/0x4c @ 1
+0 initcall snd_mem_init+0x0/0x4c returned 0 after 20 usecs
+0 calling alsa_rawmidi_init+0x0/0x20 @ 1
+0 initcall alsa_rawmidi_init+0x0/0x20 returned 0 after 6 usecs
+0 calling snd_compress_init+0x0/0x14 @ 1
+0 initcall snd_compress_init+0x0/0x14 returned 0 after 2 usecs
+0.001 calling snd_soc_init+0x0/0x114 @ 1
+0.004 Registered codec 'snd-soc-dummy'
+0 initcall snd_soc_init+0x0/0x114 returned 0 after 5049 usecs
+0.001 calling wm5102_codec_driver_init+0x0/0x1c @ 1
+0 Registered codec 'wm5102-codec'
+0 initcall wm5102_codec_driver_init+0x0/0x1c returned 0 after 1345 usecs
+0.002 calling asoc_dma_driver_init+0x0/0x1c @ 1
+0 initcall asoc_dma_driver_init+0x0/0x1c returned 0 after 998 usecs
+0.001 calling s3c_pcm_driver_init+0x0/0x1c @ 1
+0 initcall s3c_pcm_driver_init+0x0/0x1c returned 0 after 1022 usecs
+0.001 calling samsung_i2s_driver_init+0x0/0x1c @ 1
+0 initcall samsung_i2s_driver_init+0x0/0x1c returned 0 after 1400 usecs
+0.001 calling asoc_idma_driver_init+0x0/0x1c @ 1
+0 initcall asoc_idma_driver_init+0x0/0x1c returned 0 after 715 usecs
+0 calling srp_init+0x0/0x28 @ 1
+0.002 Samsung SRP driver, (c)2011 Samsung Electronics
+0 initcall srp_init+0x0/0x28 returned 0 after 1752 usecs
+0 calling m6x_audio_init+0x0/0x50 @ 1
+0 m6x_audio_init++
+0 m6x_audio_probe++
+0.015 Sound: enabled mclk
+0.004 soc-audio soc-audio.0: ASoC machine Exynos WM5102 should use snd_soc_register_card()
+0.001 mmc_host mmc0: Bus speed (slot 0) = 40000000Hz (slot req 52000000Hz, actual 40000000HZ div = 0)
+0 mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 52000000Hz, actual 50000000HZ div = 1)
+0.001 mmc0: new high speed DDR MMC card at address 0001
+0.002 mmcblk0: mmc0:0001 016G92 14.6 GiB 
+0.004 mmcblk0: p1 p2 p3
+0 add extra partition at mmcblk0p12(REC_PRIV)
+0.001 meizu_device_info_init called
+0.001 @@@@ SN rsa with sha1 verify failed!!!!
+0.002 @@@@ MAC rsa with sha1 verify failed!!!!
+0.003 NOT LEGAL SYSTEM PROTECT SLOT
+0 samsung-i2s samsung-i2s.0: EPLL rate = 400000000
+0 samsung-i2s samsung-i2s.0: SRP rate = 100000000
+0.001 samsung-i2s samsung-i2s.0: BUS rate = 50000000
+0 samsung-i2s samsung-i2s.4: EPLL rate = 400000000
+0 samsung-i2s samsung-i2s.4: SRP rate = 100000000
+0.011 samsung-i2s samsung-i2s.4: BUS rate = 50000000
+0 async_waiting @ 1
+0 calling 2_dapm_pre_sequence_async+0x0/0xa0 @ 5
+0 initcall 2_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 3_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 4_dapm_pre_sequence_async+0x0/0xa0 @ 5
+0 initcall 3_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 initcall 4_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 5_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 6_dapm_pre_sequence_async+0x0/0xa0 @ 5
+0 initcall 5_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 initcall 6_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 7_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 8_dapm_pre_sequence_async+0x0/0xa0 @ 5
+0 initcall 7_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 initcall 8_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 9_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 10_dapm_pre_sequence_async+0x0/0xa0 @ 5
+0 initcall 9_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 initcall 10_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 11_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 11_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 17 usecs
+0 async_continuing @ 1 after 393 usec
+0 calling 12_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 12_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 13_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 13_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 14_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 14_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 15_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 15_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 16_dapm_post_sequence_async+0x0/0xec @ 1144
+0.001 initcall 16_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 17_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 17_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 18_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 18_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 19_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 19_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 20_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 20_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 21_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 21_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 soc-audio soc-audio.0: wm5102-aif1 <-> samsung-i2s.0 mapping ok
+0 calling 22_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0.001 initcall 22_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 23_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 23_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 24_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 24_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 25_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 25_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 26_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 26_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 27_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 27_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 28_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 28_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 29_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 29_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 30_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 30_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 31_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 31_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 calling 32_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 32_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 33_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 33_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 34_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 34_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 35_dapm_post_sequence_async+0x0/0xec @ 1144
+0.001 initcall 35_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 36_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 36_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 37_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 37_dapm_post_sequence_async+0x0/0xec returned 0 after 4 usecs
+0 calling 38_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 38_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 39_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 39_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 40_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 40_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 41_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 41_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0.001 async_continuing @ 1 after 4 usec
+0 soc-audio soc-audio.0: wm5102-aif1 <-> samsung-i2s.4 mapping ok
+0 calling 42_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 42_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 43_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 43_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 44_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 44_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 45_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 45_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 46_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 46_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 47_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 47_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 48_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 48_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 49_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 49_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 50_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 50_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 51_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 51_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 calling 52_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 52_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 53_dapm_post_sequence_async+0x0/0xec @ 1144
+0.001 initcall 53_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 54_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 54_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 55_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 55_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 calling 56_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 56_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 calling 57_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 57_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 58_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 58_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 59_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 59_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 60_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 60_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 61_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 61_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 soc-audio soc-audio.0: wm5102-aif2 <-> m6x.voice mapping ok
+0.001 calling 62_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 62_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 63_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 63_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 64_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 64_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 65_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 65_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 66_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 66_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 67_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 67_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 68_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 68_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 69_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 69_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 70_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 70_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 71_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 71_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 calling 72_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 72_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 73_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 73_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 74_dapm_post_sequence_async+0x0/0xec @ 1144
+0.001 initcall 74_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 75_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 75_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 76_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 76_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 77_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 77_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 78_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 78_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 79_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 79_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 80_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 80_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 81_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 81_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 soc-audio soc-audio.0: wm5102-aif3 <-> m6x.pa mapping ok
+0 calling 82_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 82_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0.001 calling 83_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 83_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 84_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 84_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 85_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 85_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 3 usecs
+0 calling 86_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 86_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 3 usecs
+0 calling 87_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 87_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 88_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 88_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 89_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 89_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 90_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 90_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 91_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 91_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 calling 92_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 92_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 93_dapm_post_sequence_async+0x0/0xec @ 1144
+0.001 initcall 93_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 94_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 94_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 95_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 95_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 96_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 96_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 97_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 97_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 98_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 98_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 99_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 99_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 100_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 100_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 101_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 101_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0.001 async_continuing @ 1 after 4 usec
+0 soc-audio soc-audio.0: wm5102-aif2 <-> samsung-pcm.0 mapping ok
+0 calling 102_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 102_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 103_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 103_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 104_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 104_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 105_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 105_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 106_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 106_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 107_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 107_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 108_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 108_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 109_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 109_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 110_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 110_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 111_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 111_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0.001 async_continuing @ 1 after 4 usec
+0 calling 112_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 112_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 113_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 113_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 114_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 114_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 115_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 115_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 116_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 116_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 117_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 117_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 118_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 118_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 119_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 119_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 120_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 120_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 121_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 121_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0.001 async_continuing @ 1 after 4 usec
+0 calling 122_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 122_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 123_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 123_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 124_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 124_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 125_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 125_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 126_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 126_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 127_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 127_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 128_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 128_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 129_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 129_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 130_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 130_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 131_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0.001 initcall 131_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 calling 132_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 132_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 133_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 133_dapm_post_sequence_async+0x0/0xec returned 0 after 5 usecs
+0 calling 134_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 134_dapm_post_sequence_async+0x0/0xec returned 0 after 4 usecs
+0 calling 135_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 135_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 136_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 136_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 137_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 137_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 138_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 138_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 139_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 139_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 140_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 140_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 141_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 141_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0.001 async_waiting @ 1
+0.006 async_continuing @ 1 after 4 usec
+0 calling 142_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0.001 initcall 142_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 143_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 143_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 144_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 144_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 145_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 145_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 146_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 146_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 147_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 147_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 148_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 148_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 149_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 149_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 150_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 150_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 151_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 151_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0 calling 152_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 152_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 153_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 153_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 154_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 154_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 155_dapm_post_sequence_async+0x0/0xec @ 1144
+0.001 initcall 155_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 156_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 156_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 157_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 157_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 158_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 158_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 159_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 159_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 160_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 160_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 161_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 161_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 4 usec
+0.001 m6x_audio_probe--
+0 m6x_audio_init--
+0 initcall m6x_audio_init+0x0/0x50 returned 0 after 67231 usecs
+0 calling es305b_init+0x0/0x20 @ 1
+0 [AUD_ES305B] es305b_i2c_probe: 
+0 [AUD_ES305B] es305b_i2c_probe: ***** AUD_ES305_RESET OK :1 *****
+0.001 [AUD_ES305B] es305b_i2c_probe: ***** AUD_ES305_WAKEUP OK :1 *****
+0.001 new setting mode is the same with prev setting, skip it
+0.001 [AUD_ES305B] es305b_i2c_probe: ES305B: load es305b_24m_soc_fw.bin
+0 i2c-core: driver [audience_es305b] using legacy suspend method
+0 i2c-core: driver [audience_es305b] using legacy resume method
+0 initcall es305b_init+0x0/0x20 returned 0 after 2865 usecs
+0 calling sock_diag_init+0x0/0x58 @ 1
+0 initcall sock_diag_init+0x0/0x58 returned 0 after 20 usecs
+0 calling flow_cache_init_global+0x0/0x48 @ 1
+0 initcall flow_cache_init_global+0x0/0x48 returned 0 after 79 usecs
+0 calling blackhole_module_init+0x0/0x1c @ 1
+0 initcall blackhole_module_init+0x0/0x1c returned 0 after 5 usecs
+0 calling police_init_module+0x0/0x1c @ 1
+0 initcall police_init_module+0x0/0x1c returned 0 after 5 usecs
+0 calling gact_init_module+0x0/0x28 @ 1
+0 GACT probability NOT on
+0 initcall gact_init_module+0x0/0x28 returned 0 after 15 usecs
+0 calling mirred_init_module+0x0/0x3c @ 1
+0 Mirror/redirect action on
+0 initcall mirred_init_module+0x0/0x3c returned 0 after 20 usecs
+0 calling htb_module_init+0x0/0x1c @ 1
+0 initcall htb_module_init+0x0/0x1c returned 0 after 5 usecs
+0 calling ingress_module_init+0x0/0x1c @ 1
+0 initcall ingress_module_init+0x0/0x1c returned 0 after 5 usecs
+0 calling init_u32+0x0/0x34 @ 1
+0 u32 classifier
+0 Actions configured
+0 initcall init_u32+0x0/0x34 returned 0 after 22 usecs
+0 calling init_em_u32+0x0/0x1c @ 1
+0 initcall init_em_u32+0x0/0x1c returned 0 after 4 usecs
+0 calling nfnetlink_init+0x0/0x30 @ 1
+0 Netfilter messages via NETLINK v0.30.
+0 initcall nfnetlink_init+0x0/0x30 returned 0 after 31 usecs
+0 calling nfnetlink_queue_init+0x0/0xc0 @ 1
+0 initcall nfnetlink_queue_init+0x0/0xc0 returned 0 after 24 usecs
+0 calling nfnetlink_log_init+0x0/0xf0 @ 1
+0 initcall nfnetlink_log_init+0x0/0xf0 returned 0 after 46 usecs
+0 calling nf_conntrack_standalone_init+0x0/0x1c @ 1
+0.002 nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+0 initcall nf_conntrack_standalone_init+0x0/0x1c returned 0 after 1267 usecs
+0 calling nf_conntrack_proto_dccp_init+0x0/0x64 @ 1
+0 initcall nf_conntrack_proto_dccp_init+0x0/0x64 returned 0 after 73 usecs
+0 calling nf_ct_proto_gre_init+0x0/0x44 @ 1
+0 initcall nf_ct_proto_gre_init+0x0/0x44 returned 0 after 12 usecs
+0 calling nf_conntrack_proto_sctp_init+0x0/0x60 @ 1
+0 initcall nf_conntrack_proto_sctp_init+0x0/0x60 returned 0 after 52 usecs
+0 calling nf_conntrack_proto_udplite_init+0x0/0x48 @ 1
+0 initcall nf_conntrack_proto_udplite_init+0x0/0x48 returned 0 after 21 usecs
+0 calling ctnetlink_init+0x0/0xa4 @ 1
+0 ctnetlink v0.93: registering with nfnetlink.
+0 initcall ctnetlink_init+0x0/0xa4 returned 0 after 28 usecs
+0 calling nf_conntrack_amanda_init+0x0/0xd0 @ 1
+0 initcall nf_conntrack_amanda_init+0x0/0xd0 returned 0 after 12 usecs
+0 calling nf_conntrack_ftp_init+0x0/0x184 @ 1
+0 initcall nf_conntrack_ftp_init+0x0/0x184 returned 0 after 13 usecs
+0 calling nf_conntrack_h323_init+0x0/0xcc @ 1
+0 initcall nf_conntrack_h323_init+0x0/0xcc returned 0 after 20 usecs
+0 calling nf_conntrack_irc_init+0x0/0x188 @ 1
+0 initcall nf_conntrack_irc_init+0x0/0x188 returned 0 after 9 usecs
+0 calling nf_conntrack_netbios_ns_init+0x0/0x2c @ 1
+0 initcall nf_conntrack_netbios_ns_init+0x0/0x2c returned 0 after 6 usecs
+0 calling nf_conntrack_pptp_init+0x0/0x44 @ 1
+0 initcall nf_conntrack_pptp_init+0x0/0x44 returned 0 after 7 usecs
+0.001 calling nf_conntrack_sane_init+0x0/0x188 @ 1
+0 initcall nf_conntrack_sane_init+0x0/0x188 returned 0 after 12 usecs
+0 calling nf_conntrack_tftp_init+0x0/0x178 @ 1
+0 initcall nf_conntrack_tftp_init+0x0/0x178 returned 0 after 9 usecs
+0 calling nf_tproxy_init+0x0/0x2c @ 1
+0 NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+0 NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+0 initcall nf_tproxy_init+0x0/0x2c returned 0 after 26 usecs
+0 calling xt_init+0x0/0x10c @ 1
+0 initcall xt_init+0x0/0x10c returned 0 after 12 usecs
+0 calling tcpudp_mt_init+0x0/0x20 @ 1
+0 initcall tcpudp_mt_init+0x0/0x20 returned 0 after 17 usecs
+0 calling mark_mt_init+0x0/0x48 @ 1
+0 initcall mark_mt_init+0x0/0x48 returned 0 after 7 usecs
+0 calling connmark_mt_init+0x0/0x48 @ 1
+0 initcall connmark_mt_init+0x0/0x48 returned 0 after 7 usecs
+0 calling classify_tg_init+0x0/0x20 @ 1
+0 initcall classify_tg_init+0x0/0x20 returned 0 after 7 usecs
+0 calling nflog_tg_init+0x0/0x1c @ 1
+0 initcall nflog_tg_init+0x0/0x1c returned 0 after 5 usecs
+0 calling nfqueue_tg_init+0x0/0x20 @ 1
+0 initcall nfqueue_tg_init+0x0/0x20 returned 0 after 9 usecs
+0 calling tproxy_tg_init+0x0/0x28 @ 1
+0 initcall tproxy_tg_init+0x0/0x28 returned 0 after 10 usecs
+0 calling trace_tg_init+0x0/0x1c @ 1
+0 initcall trace_tg_init+0x0/0x1c returned 0 after 5 usecs
+0 calling comment_mt_init+0x0/0x1c @ 1
+0 initcall comment_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling connbytes_mt_init+0x0/0x1c @ 1
+0 initcall connbytes_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling connlimit_mt_init+0x0/0x20 @ 1
+0 initcall connlimit_mt_init+0x0/0x20 returned 0 after 7 usecs
+0 calling conntrack_mt_init+0x0/0x20 @ 1
+0 initcall conntrack_mt_init+0x0/0x20 returned 0 after 9 usecs
+0 calling ecn_mt_init+0x0/0x20 @ 1
+0 initcall ecn_mt_init+0x0/0x20 returned 0 after 7 usecs
+0 calling hashlimit_mt_init+0x0/0x9c @ 1
+0 initcall hashlimit_mt_init+0x0/0x9c returned 0 after 57 usecs
+0 calling helper_mt_init+0x0/0x1c @ 1
+0 initcall helper_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling hl_mt_init+0x0/0x20 @ 1
+0 initcall hl_mt_init+0x0/0x20 returned 0 after 7 usecs
+0 calling iprange_mt_init+0x0/0x20 @ 1
+0 initcall iprange_mt_init+0x0/0x20 returned 0 after 7 usecs
+0.001 calling length_mt_init+0x0/0x20 @ 1
+0 initcall length_mt_init+0x0/0x20 returned 0 after 7 usecs
+0 calling limit_mt_init+0x0/0x1c @ 1
+0 initcall limit_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling mac_mt_init+0x0/0x1c @ 1
+0 initcall mac_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling pkttype_mt_init+0x0/0x1c @ 1
+0 initcall pkttype_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling policy_mt_init+0x0/0x20 @ 1
+0 initcall policy_mt_init+0x0/0x20 returned 0 after 7 usecs
+0 calling qtaguid_mt_init+0x0/0x6c @ 1
+0 initcall qtaguid_mt_init+0x0/0x6c returned 0 after 655 usecs
+0 calling quota_mt_init+0x0/0x1c @ 1
+0 initcall quota_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling quota_mt2_init+0x0/0xa0 @ 1
+0.001 initcall quota_mt2_init+0x0/0xa0 returned 0 after 34 usecs
+0 calling socket_mt_init+0x0/0x28 @ 1
+0 initcall socket_mt_init+0x0/0x28 returned 0 after 9 usecs
+0 calling state_mt_init+0x0/0x1c @ 1
+0 initcall state_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling statistic_mt_init+0x0/0x1c @ 1
+0 initcall statistic_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling string_mt_init+0x0/0x1c @ 1
+0 initcall string_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling time_mt_init+0x0/0x98 @ 1
+0 xt_time: kernel timezone is -0000
+0 initcall time_mt_init+0x0/0x98 returned 0 after 16 usecs
+0 calling u32_mt_init+0x0/0x1c @ 1
+0 initcall u32_mt_init+0x0/0x1c returned 0 after 5 usecs
+0 calling sysctl_ipv4_init+0x0/0x9c @ 1
+0 initcall sysctl_ipv4_init+0x0/0x9c returned 0 after 160 usecs
+0 calling esp4_init+0x0/0x84 @ 1
+0 initcall esp4_init+0x0/0x84 returned 0 after 6 usecs
+0 calling tunnel4_init+0x0/0x78 @ 1
+0 initcall tunnel4_init+0x0/0x78 returned 0 after 5 usecs
+0 calling xfrm4_transport_init+0x0/0x20 @ 1
+0 initcall xfrm4_transport_init+0x0/0x20 returned 0 after 4 usecs
+0 calling xfrm4_mode_tunnel_init+0x0/0x20 @ 1
+0 initcall xfrm4_mode_tunnel_init+0x0/0x20 returned 0 after 4 usecs
+0 calling ipv4_netfilter_init+0x0/0x1c @ 1
+0 initcall ipv4_netfilter_init+0x0/0x1c returned 0 after 5 usecs
+0 calling nf_conntrack_l3proto_ipv4_init+0x0/0x138 @ 1
+0 initcall nf_conntrack_l3proto_ipv4_init+0x0/0x138 returned 0 after 227 usecs
+0.001 calling nf_nat_init+0x0/0x140 @ 1
+0 initcall nf_nat_init+0x0/0x140 returned 0 after 44 usecs
+0 calling nf_defrag_init+0x0/0x20 @ 1
+0 initcall nf_defrag_init+0x0/0x20 returned 0 after 8 usecs
+0 calling nf_nat_amanda_init+0x0/0x34 @ 1
+0 initcall nf_nat_amanda_init+0x0/0x34 returned 0 after 2 usecs
+0 calling nf_nat_ftp_init+0x0/0x34 @ 1
+0 initcall nf_nat_ftp_init+0x0/0x34 returned 0 after 2 usecs
+0 calling init+0x0/0x170 @ 1
+0 initcall init+0x0/0x170 returned 0 after 6 usecs
+0 calling nf_nat_irc_init+0x0/0x34 @ 1
+0 initcall nf_nat_irc_init+0x0/0x34 returned 0 after 2 usecs
+0 calling nf_nat_helper_pptp_init+0x0/0xa4 @ 1
+0 initcall nf_nat_helper_pptp_init+0x0/0xa4 returned 0 after 2 usecs
+0 calling nf_nat_tftp_init+0x0/0x34 @ 1
+0 initcall nf_nat_tftp_init+0x0/0x34 returned 0 after 1 usecs
+0 calling nf_nat_proto_dccp_init+0x0/0x1c @ 1
+0 initcall nf_nat_proto_dccp_init+0x0/0x1c returned 0 after 4 usecs
+0 calling nf_nat_proto_gre_init+0x0/0x1c @ 1
+0 initcall nf_nat_proto_gre_init+0x0/0x1c returned 0 after 4 usecs
+0 calling nf_nat_proto_udplite_init+0x0/0x1c @ 1
+0 initcall nf_nat_proto_udplite_init+0x0/0x1c returned 0 after 4 usecs
+0 calling nf_nat_proto_sctp_init+0x0/0x1c @ 1
+0 initcall nf_nat_proto_sctp_init+0x0/0x1c returned 0 after 4 usecs
+0 calling ip_tables_init+0x0/0xa0 @ 1
+0 ip_tables: (C) 2000-2006 Netfilter Core Team
+0 initcall ip_tables_init+0x0/0xa0 returned 0 after 64 usecs
+0 calling iptable_filter_init+0x0/0x60 @ 1
+0 initcall iptable_filter_init+0x0/0x60 returned 0 after 75 usecs
+0 calling iptable_mangle_init+0x0/0x60 @ 1
+0 initcall iptable_mangle_init+0x0/0x60 returned 0 after 75 usecs
+0 calling nf_nat_standalone_init+0x0/0x90 @ 1
+0 initcall nf_nat_standalone_init+0x0/0x90 returned 0 after 71 usecs
+0 calling iptable_raw_init+0x0/0x60 @ 1
+0 initcall iptable_raw_init+0x0/0x60 returned 0 after 63 usecs
+0 calling ah_mt_init+0x0/0x1c @ 1
+0 initcall ah_mt_init+0x0/0x1c returned 0 after 5 usecs
+0.001 calling masquerade_tg_init+0x0/0x40 @ 1
+0 initcall masquerade_tg_init+0x0/0x40 returned 0 after 9 usecs
+0 calling netmap_tg_init+0x0/0x1c @ 1
+0 initcall netmap_tg_init+0x0/0x1c returned 0 after 4 usecs
+0 calling redirect_tg_init+0x0/0x1c @ 1
+0 initcall redirect_tg_init+0x0/0x1c returned 0 after 5 usecs
+0 calling reject_tg_init+0x0/0x1c @ 1
+0 initcall reject_tg_init+0x0/0x1c returned 0 after 8 usecs
+0 calling arp_tables_init+0x0/0x7c @ 1
+0 arp_tables: (C) 2002 David S. Miller
+0 initcall arp_tables_init+0x0/0x7c returned 0 after 78 usecs
+0 calling arpt_mangle_init+0x0/0x1c @ 1
+0 initcall arpt_mangle_init+0x0/0x1c returned 0 after 5 usecs
+0 calling arptable_filter_init+0x0/0x60 @ 1
+0 initcall arptable_filter_init+0x0/0x60 returned 0 after 74 usecs
+0 calling inet_diag_init+0x0/0x98 @ 1
+0 initcall inet_diag_init+0x0/0x98 returned 0 after 10 usecs
+0 calling tcp_diag_init+0x0/0x1c @ 1
+0 initcall tcp_diag_init+0x0/0x1c returned 0 after 5 usecs
+0 calling cubictcp_register+0x0/0x7c @ 1
+0 TCP: cubic registered
+0 initcall cubictcp_register+0x0/0x7c returned 0 after 16 usecs
+0.002 calling inet6_init+0x0/0x74 @ 1
+0.001 NET: Registered protocol family 10
+0 initcall inet6_init+0x0/0x74 returned 0 after 3078 usecs
+0 calling ah6_init+0x0/0x78 @ 1
+0 initcall ah6_init+0x0/0x78 returned 0 after 5 usecs
+0 calling esp6_init+0x0/0x78 @ 1
+0 initcall esp6_init+0x0/0x78 returned 0 after 5 usecs
+0 calling ipcomp6_init+0x0/0x78 @ 1
+0 initcall ipcomp6_init+0x0/0x78 returned 0 after 5 usecs
+0.001 calling xfrm6_tunnel_init+0x0/0xd8 @ 1
+0 initcall xfrm6_tunnel_init+0x0/0xd8 returned 0 after 43 usecs
+0 calling tunnel6_init+0x0/0x6c @ 1
+0 initcall tunnel6_init+0x0/0x6c returned 0 after 5 usecs
+0 calling xfrm6_transport_init+0x0/0x20 @ 1
+0 initcall xfrm6_transport_init+0x0/0x20 returned 0 after 4 usecs
+0 calling xfrm6_mode_tunnel_init+0x0/0x20 @ 1
+0 initcall xfrm6_mode_tunnel_init+0x0/0x20 returned 0 after 4 usecs
+0 calling xfrm6_beet_init+0x0/0x20 @ 1
+0 initcall xfrm6_beet_init+0x0/0x20 returned 0 after 4 usecs
+0 calling mip6_init+0x0/0xc4 @ 1
+0 Mobile IPv6
+0 initcall mip6_init+0x0/0xc4 returned 0 after 15 usecs
+0 calling ip6_tables_init+0x0/0xa0 @ 1
+0 ip6_tables: (C) 2000-2006 Netfilter Core Team
+0 initcall ip6_tables_init+0x0/0xa0 returned 0 after 66 usecs
+0 calling ip6table_filter_init+0x0/0x60 @ 1
+0 initcall ip6table_filter_init+0x0/0x60 returned 0 after 69 usecs
+0 calling ip6table_mangle_init+0x0/0x60 @ 1
+0 initcall ip6table_mangle_init+0x0/0x60 returned 0 after 78 usecs
+0 calling ip6table_raw_init+0x0/0x60 @ 1
+0 initcall ip6table_raw_init+0x0/0x60 returned 0 after 64 usecs
+0 calling nf_conntrack_l3proto_ipv6_init+0x0/0xf0 @ 1
+0 initcall nf_conntrack_l3proto_ipv6_init+0x0/0xf0 returned 0 after 42 usecs
+0 calling nf_defrag_init+0x0/0x58 @ 1
+0 initcall nf_defrag_init+0x0/0x58 returned 0 after 27 usecs
+0 calling reject_tg6_init+0x0/0x1c @ 1
+0 initcall reject_tg6_init+0x0/0x1c returned 0 after 5 usecs
+0 calling sit_init+0x0/0x60 @ 1
+0.003 IPv6 over IPv4 tunneling driver
+0 initcall sit_init+0x0/0x60 returned 0 after 2059 usecs
+0.001 calling ip6_tunnel_init+0x0/0x8c @ 1
+0 initcall ip6_tunnel_init+0x0/0x8c returned 0 after 1630 usecs
+0 calling packet_init+0x0/0x50 @ 1
+0 NET: Registered protocol family 17
+0 initcall packet_init+0x0/0x50 returned 0 after 39 usecs
+0 calling ipsec_pfkey_init+0x0/0x80 @ 1
+0 NET: Registered protocol family 15
+0 initcall ipsec_pfkey_init+0x0/0x80 returned 0 after 42 usecs
+0.001 calling rfcomm_init+0x0/0x104 @ 1
+0 Bluetooth: RFCOMM TTY layer initialized
+0 Bluetooth: RFCOMM socket layer initialized
+0 Bluetooth: RFCOMM ver 1.11
+0 initcall rfcomm_init+0x0/0x104 returned 0 after 279 usecs
+0 calling hidp_init+0x0/0x5c @ 1
+0 Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+0 initcall hidp_init+0x0/0x5c returned 0 after 329 usecs
+0 calling phonet_init+0x0/0x7c @ 1
+0 NET: Registered protocol family 35
+0 initcall phonet_init+0x0/0x7c returned 0 after 108 usecs
+0 calling pep_register+0x0/0x20 @ 1
+0 initcall pep_register+0x0/0x20 returned 0 after 27 usecs
+0 calling resetreason_init+0x0/0x70 @ 1
+0.001 ###############start register reset_reason_mem########
+0 reset_mem_probe The ram which record reasons was damaged 
+0 check_hardware_reset_reason: reset_reason = 0x100
+0 inc_reset_reason resetreason = pin reset, count = 1 
+0 initcall resetreason_init+0x0/0x70 returned 0 after 811 usecs
+2.751 calling vfp_init+0x0/0x19c @ 1
+0.002 VFP support v0.3: 
+0.001 [AUD_ES305B] es305b_soc_firmware_handler: ES305B: starting to load firmware ...
+0.006 hot state 0 to 4 
+0 synaptics_dsx_i2c 7-0020: RxTx mapped from F$55
+0 
+0 	Rx mapped count 23(27)
+0 	Tx 				mapped count 13(16)
+0.001 
+0.033 synaptics_dsx_i2c 7-0020: Intializing F51.implementor 41 architecture 4 part 30 variant f rev 0
+0.007 initcall vfp_init+0x0/0x19c returned 0 after 2728477 usecs
+0.007 calling swp_emulation_init+0x0/0x5c @ 1
+0.004 Registering SWP/SWPB emulation handler
+0.007 initcall swp_emulation_init+0x0/0x5c returned 0 after 3702 usecs
+0.006 calling exynos_pm_late_initcall+0x0/0x18 @ 1
+0.008 initcall exynos_pm_late_initcall+0x0/0x18 returned 0 after 610 usecs
+0.006 calling modem_device_init+0x0/0x74 @ 1
+0.004 wake enabled for irq 516
+0.003 wake enabled for irq 524
+0.009 usbcore: registered new interface driver cdc_modem
+0.006 mif: report modem event 0x42 called by modem_probe+0x1ac/0x238
+0.005 [MODEM_IF] init_modem device over(ret=0)
+0.008 initcall modem_device_init+0x0/0x74 returned 0 after 27898 usecs
+0.004 calling init_oops_id+0x0/0x50 @ 1
+0.007 initcall init_oops_id+0x0/0x50 returned 0 after 15 usecs
+0.005 calling printk_late_init+0x0/0x78 @ 1
+0.007 initcall printk_late_init+0x0/0x78 returned 0 after 5 usecs
+0.011 calling pm_qos_power_init+0x0/0x94 @ 1
+0.006 initcall pm_qos_power_init+0x0/0x94 returned 0 after 5483 usecs
+0.005 calling pm_debugfs_init+0x0/0x40 @ 1
+0.007 initcall pm_debugfs_init+0x0/0x40 returned 0 after 11 usecs
+0.006 calling suspend_time_debug_init+0x0/0x58 @ 1
+0.007 initcall suspend_time_debug_init+0x0/0x58 returned 0 after 12 usecs
+0.006 calling add_shrinker_debug+0x0/0x40 @ 1
+0.007 initcall add_shrinker_debug+0x0/0x40 returned 0 after 13 usecs
+0.005 calling inform_proc_init+0x0/0x50 @ 1
+0.007 initcall inform_proc_init+0x0/0x50 returned 0 after 21 usecs
+0.005 calling random32_reseed+0x0/0xb4 @ 1
+0.007 initcall random32_reseed+0x0/0xb4 returned 0 after 56 usecs
+0.007 calling regulator_init_complete+0x0/0x128 @ 1
+0.005 VDD28_SEN: incomplete constraints, leaving on
+0.006 VDD28_IR: incomplete constraints, leaving on
+0.005 BATTERY: incomplete constraints, leaving on
+0.006 safeout1 range: incomplete constraints, leaving on
+0.008 initcall regulator_init_complete+0x0/0x128 returned 0 after 22685 usecs
+0.006 calling random_int_secret_init+0x0/0x24 @ 1
+0.007 initcall random_int_secret_init+0x0/0x24 returned 0 after 116 usecs
+0.005 calling S3cLcdBridgeInit+0x0/0x1c @ 1
+0 
+0.005 uiCount = 3797
+0.005 PA FB = 0xB2900000, bits per pixel = 32
+0.012 screen width=1080 height=1800 va=0xdf941000xres_virtual = 1080, yres_virtual = 1800, xoffset = 0, yoffset = 0
+0.003 fb_size=15552000
+0.007 Back frameBuffer[0].VAddr=e00ab700 PAddr=b206a000 size=7776000
+0.007 initcall S3cLcdBridgeInit+0x0/0x1c returned 0 after 31527 usecs
+0.006 calling deferred_probe_initcall+0x0/0x7c @ 1
+0.008 initcall deferred_probe_initcall+0x0/0x7c returned 0 after 401 usecs
+0.005 calling sync_debugfs_init+0x0/0x40 @ 1
+0.007 initcall sync_debugfs_init+0x0/0x40 returned 0 after 14 usecs
+0.006 calling scsi_complete_async_scans+0x0/0x12c @ 1
+0.008 initcall scsi_complete_async_scans+0x0/0x12c returned 0 after 2 usecs
+0.005 calling dhd_module_init+0x0/0x2cc @ 1
+0.003 wifi_set_power = 1
+0.412 ## wlan_power_en: enable power
+0.002 wifi_set_carddetect = 1
+0.218 ### wlan_carddetect_en 1
+0.008 fwu_start_reflash: Start of reflash process------------------------------------------------
+0.005 fwu_start_reflash: product id M65-TPK
+0.01 synaptics_dsx_i2c 7-0020: fwu_start_reflash: Requesting firmware image rmi4/M6X-TPK.img
+0.008 synaptics_dsx_i2c 7-0020: fwu_start_reflash: Firmware image size = 47360
+0.008 synaptics_dsx_i2c 7-0020: Firwmare size 45056, config size 512
+0.008 synaptics_dsx_i2c 7-0020: Device firmware id 1533486, Image firmware id 1533486
+0.01 mmc_host mmc1: Bus speed (slot 0) = 25000000Hz (slot req 400000Hz, actual 390625HZ div = 32)
+0.006 synaptics_dsx_i2c 7-0020: Device config ID T107(107)
+0.007 synaptics_dsx_i2c 7-0020: Image config ID T107(107)
+0.009 synaptics_dsx_i2c 7-0020: fwu_go_nogo: Nothing needs to be updated
+0.007 synaptics_dsx_i2c 7-0020: fwu_start_reflash: No need to do reflash.
+0.025 fwu_start_reflash: End of reflash process------------------------------------------------
+0.016 mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+0.005 mmc1: queuing unknown CIS tuple 0x91 (3 bytes)
+0.074 mmc1: new high speed SDIO card at address 0001
+0.004 alloc static buf at de0c0000!
+0.012 F1 signature read @0x18000000=0x1602a94d
+0.008 DHD: dongle ram size is set to 524288(orig 524288) at 0x0
+0.009 wl_create_event_handler(): thread:wl_event_handler:532 started
+0.003 p2p0: P2P Interface Registered
+0.006 dhd_attach(): thread:dhd_watchdog_thread:538 started
+0.005 dhd_attach(): thread:dhd_dpc:539 started
+0.006 dhd_attach(): thread:dhd_rxf:53a started
+0.005 dhd_attach(): thread:dhd_sysioc:53b started
+0.003 wifi_get_mac_addr
+0.005 get_mac_form_device failed
+0.007 brcm_wlan_get_mac_addr: write file /data/calibration/mac_addr
+0.008 brcm_wlan_get_mac_addr:create file /data/calibration/mac_addr error(1)
+0.006 mac address mac=38:bc:1a:0a:a7:48
+0.007 Broadcom Dongle Host Driver: register interface [wlan0] MAC: 38:bc:1a:0a:a7:48
+0 
+0 Dongle Host Driver, version 1.88.10 (r395294)
+0.015 Compiled in drivers/net/wireless/bcmdhd on Jan 2 2014 at 16:54:36
+0.003 wifi_set_power = 0
+0.017 ## wlan_power_en: disable power
+0.004 =========== WLAN placed in RESET ========
+0.007 initcall dhd_module_init+0x0/0x2cc returned 0 after 950959 usecs
+0.006 calling gpio_keys_init+0x0/0x1c @ 1
+0.008 input: gpio-keys as /devices/platform/gpio-keys.0/input/input6
+0.006 initcall gpio_keys_init+0x0/0x1c returned 0 after 8526 usecs
+0.014 calling rtc_hctosys+0x0/0x120 @ 1
+0.008 max77802-rtc max77802-rtc: setting system clock to 2014-01-02 09:03:44 UTC (1388653424)
+0.007 initcall rtc_hctosys+0x0/0x120 returned 0 after 17502 usecs
+0.005 calling alarm_late_init+0x0/0x9c @ 1
+0.007 initcall alarm_late_init+0x0/0x9c returned 0 after 6 usecs
+0.009 calling max17047_init+0x0/0x20 @ 1
+0.003 batid_adc_read: sum value is 2014
+0.005 pcb version_id 0
+0.013 POR is not set
+0.012 entern max17047_saved_learned_parameters:***************
+0.003 set saved alarm after 18000 seconds
+0.011 set saved alarm after 86400 seconds
+0.02 qr0(0x3400), (qr1)0x1b00, (qr2)0x1200, (qr3)0xd01,(rcomp0)0x4e, (tempco)0x2c2f, (fullcap)0x129a,(fullcapnom)0x1295,(iavg_empty)0x780, (cycles)0x2a5, (flag)1
+0.001 initcall max17047_init+0x0/0x20 returned 0 after 69569 usecs
+0.002 write_battery_model rtn code 0
+0.012 read_battery_model rtn code 0
+0.007 calling max77665_charger_init+0x0/0x1c @ 1
+0.011 create file failed******
+0.008 ENTER max77665_charger_isr:****irq:669******
+0.006 initcall max77665_charger_init+0x0/0x1c returned 0 after 20010 usecs
+0.007 calling arizona_extcon_gpio_init+0x0/0x1c @ 1
+0.007 initcall arizona_extcon_gpio_init+0x0/0x1c returned 0 after 1014 usecs
+0.005 calling ram_console_late_init+0x0/0xac @ 1
+0.008 initcall ram_console_late_init+0x0/0xac returned 0 after 38 usecs
+0.003 calling devfreq_start_polling+0x0/0xc4 @ 1
+0.002 wake enabled for irq 543
+0.004 async_waiting @ 926
+0 calling 162_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 162_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 3 usecs
+0 calling 163_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 164_dapm_pre_sequence_async+0x0/0xa0 @ 22
+0 initcall 163_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 3 usecs
+0 initcall 164_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0.001 calling 165_dapm_pre_sequence_async+0x0/0xa0 @ 22
+0 calling 166_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 167_dapm_pre_sequence_async+0x0/0xa0 @ 1153
+0 initcall 166_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 initcall 167_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 168_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 168_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 initcall 165_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 1 usecs
+0 calling 170_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 calling 169_dapm_pre_sequence_async+0x0/0xa0 @ 1153
+0 initcall 170_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 initcall 169_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 calling 171_dapm_pre_sequence_async+0x0/0xa0 @ 1144
+0 initcall 171_dapm_pre_sequence_async+0x0/0xa0 returned 0 after 2 usecs
+0 async_continuing @ 926 after 4944 usec
+0 calling 172_dapm_post_sequence_async+0x0/0xec @ 1369
+0 async_waiting @ 926
+0 calling 173_dapm_post_sequence_async+0x0/0xec @ 22
+0 calling 174_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 173_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 initcall 174_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 175_dapm_post_sequence_async+0x0/0xec @ 22
+0 calling 176_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 175_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 initcall 176_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 calling 177_dapm_post_sequence_async+0x0/0xec @ 22
+0 calling 178_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 177_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 calling 179_dapm_post_sequence_async+0x0/0xec @ 1153
+0 calling 180_dapm_post_sequence_async+0x0/0xec @ 22
+0 initcall 178_dapm_post_sequence_async+0x0/0xec returned 0 after 1 usecs
+0 initcall 179_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 initcall 180_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 calling 181_dapm_post_sequence_async+0x0/0xec @ 1144
+0 initcall 181_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 initcall devfreq_start_polling+0x0/0xc4 returned 0 after 399 usecs
+0 initcall 172_dapm_post_sequence_async+0x0/0xec returned 0 after 2 usecs
+0 async_continuing @ 926 after 399 usec
+0.003 input: Headset as /devices/platform/s3c64xx-spi.1/spi_master/spi1/spi1.0/arizona-extcon/input/input7
+0.019 arizona spi1.0: Spurious HPDET IRQ
+0.009 calling exynos5_busfreq_int_init+0x0/0x1c @ 1
+0.007 initcall exynos5_busfreq_int_init+0x0/0x1c returned 0 after 3106 usecs
+0.006 calling exynos5_busfreq_mif_init+0x0/0x1c @ 1
+0.132 S divider change for DFS of MIF block
+0.004 init_volt[987500], freq[800000]
+0.007 initcall exynos5_busfreq_mif_init+0x0/0x1c returned 0 after 133374 usecs
+0.005 calling net_secret_init+0x0/0x24 @ 1
+0.007 initcall net_secret_init+0x0/0x24 returned 0 after 85 usecs
+0.006 calling tcp_congestion_default+0x0/0x1c @ 1
+0.007 initcall tcp_congestion_default+0x0/0x1c returned 0 after 3 usecs
+0.006 calling exynos_cpufreq_init+0x0/0x504 @ 1
+0.004 fout_apll[800000000]
+0.008 cpufreq_governor_dbs: 100000us, 20/20
+0.006 initcall exynos_cpufreq_init+0x0/0x504 returned 0 after 11738 usecs
+0.006 calling alsa_sound_last_init+0x0/0x74 @ 1
+0.003 ALSA device list:
+0.004 #0: Exynos WM5102
+0.007 initcall alsa_sound_last_init+0x0/0x74 returned 0 after 6519 usecs
+0.005 calling initialize_hashrnd+0x0/0x24 @ 1
+0.008 initcall initialize_hashrnd+0x0/0x24 returned 0 after 26 usecs
+0 async_waiting @ 1
+0 async_continuing @ 1 after 2 usec
+0.007 Freeing init memory: 224K
+0.274 init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+0.015 EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: errors=panic
+0.029 EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+0.008 ms2r_verdict_module_type_complete_handler(), will retrieve module
+0.001 ms2r_parse_file(), err!parse file failed, the file_content is 
+0.012 fs_mgr: Running /system/bin/e2fsck on /dev/block/mmcblk0p2
+0.009 ms2r_retrieve_module(), retrieve module type from file failed, try ISP now
+0.008 ms2r_set_sensor_power():camera id = 0, enable = 1
+0.02 ms2r_set_isp_power():enable = 1
+0.012 ms2r_clock_enable(), after enable: 1, sleep for 1ms
+0.013 ms2r_send_sioloader(), start SIO loader sending
+0.02 EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard,journal_async_commit,errors=panic
+0.036 EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+0.023 fs_mgr: Running /system/bin/e2fsck on /dev/block/mmcblk0p3
+0.052 EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard,journal_async_commit,errors=panic
+0.012 init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+0.006 android_usb: already disabled
+0.006 warning: `adbd' uses 32-bit capabilities (legacy support in use)
+0.002 adb_open
+0.003 mtp_bind_config
+0.123 adb_bind_config
+0.028 ms2r_send_sioloader(), write 0x1a6c bytes via I2C, offset: 0x0
+0.033 ms2r_spi_write(), write 0x78800 bytes
+0.024 PVR_K: SysFinalise: Version string: SGX544 MP EXYNOS5410
+0.005 modem_read: modem event = 0x42
+0.002 modem_ioctl cmd: renum
+0.031 s5p_ehci_power: EHCI turns off
+0.003 s5p-ehci s5p-ehci: remove, state 1
+0.033 usb usb1: USB disconnect, device number 1
+0.119 s5p-ehci s5p-ehci: USB bus 1 deregistered
+0 s5p_ehci_power: EHCI turns on
+0.004 s5p-ehci s5p-ehci: S5P EHCI Host Controller
+0.008 s5p-ehci s5p-ehci: new USB bus registered, assigned bus number 1
+0.013 s5p-ehci s5p-ehci: irq 103, io mem 0x12110000
+0.006 s5p-ehci s5p-ehci: USB 0.0 started, EHCI 1.00
+0.003 hub 1-0:1.0: USB hub found
+0.054 hub 1-0:1.0: 3 ports detected
+0.009 s3c-fb exynos5-fb.1: - s3c_fb_blank
+0.032 ms2r_send_camera_firmware_sio(), SPI transfer OK!
+0.005 ms2r_handle_normal_cap: irq status = 0x01
+0.005 ms2r_load_firmware(), Download fw OK!
+0.007 ms2r_retrieve_module(), liteon module(0x15) found for rear camera
+0.05 ms2r_save_file(), write module=0 to file
+0.006 ms2r_set_sensor_power():camera id = 0, enable = 0
+0.013 ms2r_clock_enable(), after enable: 0, sleep for 1ms
+0.13 ms2r_set_isp_power():enable = 0
+0.164 usb 1-2: new high-speed USB device number 2 using s5p-ehci
+0.008 hsic usbdev=0xddf3b000, intf->dev=0xdda93820
+0.006 hsic usbdev=0xddf3b000, intf->dev=0xdda93c20
+0.011 hsic usbdev=0xddf3b000, intf->dev=0xdda93620
+0.005 hsic usbdev=0xddf3b000, intf->dev=0xdd422020
+0.138 modem_hsic_probe pipe:3
+4.133 [AUD_ES305B] es305b_soc_firmware_handler: firmware load successfully 
+0.004 [test] status=0x28, pending=0x8
+0.108 [test] INTMASK=0x37cf, IDSTS=0x102 IDINTEN=0x103
+0.004 adc 0x1f, adclow 1, adcerr 0, adc1k 0
+1.109 MUIC switch to --> USB
+0.004 mx_hub 18-0043: lsm330dlc_gyr_input_close
+0.121 lsm330dlc_gyr_disable called
+0.004 mx_hub 18-0043: lsm330dlc_gyr_input_close
+0.581 lsm330dlc_gyr_disable called
+0.005 gp2ap_misc_ioctl_int: sensor id is 1, enable is 0
+0.006 gp2ap_misc_ioctl_int: sensor id is 2, enable is 0
+0.007 gp2ap_set_enable(): old enabled_sensors is 0, new is 0.
+1.794 ps sensor has been disabled.
+0.008 ENTER max77665_charger_isr:****irq:518******
+0.021 ENTER max77665_charger_isr:****irq:669******
+0.007 INT_OK(0x5d), CHGIN(0x3), CHG(0x8), BAT(0x3),BYP_DTLS(0x00)
+0.004 -----max77665_charger_isr insert
+0.008 set alarm after 60 seconds
+0.154 #######usb start detect
+0.004 ########usb end detect (0x41)
+0.003 set alarm after 30 seconds
+0.007 ----------battery healthy good, enable charging
+0.552 ENTER max77665_charger_isr:****irq:669******
+0.001 adb wake lock
+0.004 adb open##########
+0.004 adb_open:1, rndis_open:0
+0.003 mtp wake lock
+0.008 adb_open:1, rndis_open:0
+0.074 android_work: sent uevent USB_STATE=CONNECTED
+0.005 android_usb gadget: high-speed config #1: android
+0.699 android_work: sent uevent USB_STATE=CONFIGURED
+0.003 [test] status=0x4, pending=0x4
+1.879 [test] INTMASK=0x37cf, IDSTS=0x102 IDINTEN=0x103
+0.006 disable haptic motor.
+0.148 pm_request_early_suspend_state: wakeup (0->0) at 27451474389 (2014-01-02 09:03:57.927508799 UTC)
+0.005 lowmem_shrink: convert oom_adj to oom_score_adj:
+0.004 oom_adj 0 => oom_score_adj 0
+0.004 oom_adj 1 => oom_score_adj 58
+0.005 oom_adj 2 => oom_score_adj 117
+0.004 oom_adj 4 => oom_score_adj 235
+0.004 oom_adj 9 => oom_score_adj 529
+0.449 oom_adj 15 => oom_score_adj 1000
+0.003 [test] status=0x14, pending=0x4
+0.014 [test] INTMASK=0xb7cf, IDSTS=0x0 IDINTEN=0x103
+0.098 leds mx-led: value = 0x0100 
+0.001 acc_open
+0.074 acc_release
+0 
+0 Dongle Host Driver, version 1.88.10 (r395294)
+0.014 Compiled in drivers/net/wireless/bcmdhd on Jan 2 2014 at 16:54:36
+0.003 wl_android_wifi_on in
+0.004 wifi_set_power = 1
+0.017 ## wlan_power_en: enable power
+0.075 disable haptic motor.
+0.007 gp2ap_misc_ioctl_int: sensor id is 1, enable is 1
+0.003 leds mx-led: value = 0x0000 
+0.007 gp2ap_set_enable(): old enabled_sensors is 0, new is 1.
+0.018 get_ps_thresholds: ps_near_threshold = 6, ps_far_threshold = 2
+0.001 mtp wake unlock
+0.004 adb_release
+0.004 adb_open:1, rndis_open:0
+0.003 adb wake unlock
+0.004 adb close##########
+0.036 adb_open:0, rndis_open:0
+0.003 android_usb: already disabled
+0.003 mtp wake lock
+0.004 adb_open:0, rndis_open:0
+0.016 mtp_bind_config
+0.004 =========== WLAN going back to live ========
+0.013 sdio_reset_comm():
+0.024 mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 392157Hz, actual 390625HZ div = 64)
+0.077 mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+0.051 dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+0.002 mtp wake unlock
+0.059 adb_open:0, rndis_open:0
+0.003 android_usb: already disabled
+0.003 mtp wake lock
+0.006 adb_open:0, rndis_open:0
+0.001 adb_open
+0.003 adb wake lock
+0.003 adb open##########
+0.004 adb_open:1, rndis_open:0
+0.003 mtp_bind_config
+0.033 adb_bind_config
+0.005 dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+0.008 wake enabled for irq 528
+0.002 wifi_get_mac_addr
+0.011 get_mac_form_device failed
+0.007 mac address mac=38:bc:1a:be:e4:44
+0.016 Firmware up: op_mode=0x0015, Broadcom Dongle Host Driver mac=38:bc:1a:be:e4:44
+0.012 Firmware version = wl0: Aug 29 2013 10:50:37 version 6.10.190.CC (TOB) (r420663) FWID 01-6397ff1
+0.045 CFG80211-ERROR) wl_cfg80211_attach_post : p2p0: p2p_dev_addr=3a:bc:1a:be:e4:44
+0.001 adb wake unlock
+0.004 adb close##########
+0.004 adb_open:0, rndis_open:0
+0.003 mtp wake unlock
+0.005 adb_open:0, rndis_open:0
+0.018 android_work: sent uevent USB_STATE=DISCONNECTED
+0.037 wl_host_event: Invalid ifidx 0 for wl0
+0.001 adb wake lock
+0.004 adb open##########
+0.003 adb_open:1, rndis_open:0
+0.003 mtp wake lock
+0.005 adb_open:1, rndis_open:0
+0.077 android_work: sent uevent USB_STATE=CONNECTED
+0.006 android_usb gadget: high-speed config #1: android
+0.603 android_work: sent uevent USB_STATE=CONFIGURED
+0.363 disable haptic motor.
+0.045 wl_bss_connect_done succeeded with 54:78:1a:20:2c:fd
