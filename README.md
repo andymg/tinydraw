@@ -11,7 +11,7 @@ such tools.
 
 ## Tools developed by ourselves
 
-- [histogram](histogram/histogram.sh) draws the one raw data in SVG
+- [histogram](histogram/histogram.sh) draws the one row data in SVG
   with histogram
 
 > This tool derives from  
