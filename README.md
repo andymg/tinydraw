@@ -1,5 +1,8 @@
 # TinyDraw -- The Tools Collection For Drawing The Data
 
+- Author: Wu Zhangjin / Falcon <wuzhangjin@gmail.com> of [TinyLab.org](http://tinylab.org)
+- Update: Tue Jan  6 19:51:14 CST 2014
+
 ## Introduction
 
 Data is often organized in strings, which is not that Intuitively.

@@ -2,6 +2,8 @@
 #
 # bootprof-convert.sh -- Convert data of /proc/bootprof to two row data format
 #
+# Author: Wu Zhangjin <wuzhangjin@gmail.com> of TinyLab.org
+# Update: Sun Jan 6 22:15:20 CST 2014
 
 bootprof_log_file=$1
 
