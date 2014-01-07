@@ -7,6 +7,8 @@
 # Author: Wu Zhangjin <wuzhangjin@gmail.com> of TinyLab.org
 # Update: Sun Jan  5 22:15:20 CST 2014
 #
+# Licensed under GPLv2 and later
+#
 
 # Arguments
 data_file=$1
