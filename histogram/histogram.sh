@@ -66,6 +66,8 @@ count=$(wc -l $data_file | cut -d' ' -f1)
 swap_input=1
 cat $data_file | cut -d' ' -f1 | head -1 | egrep -q "[a-zA-Z_:]+"
 [ $? -eq 0 ] && swap_input=0
+cat $data_file | cut -d' ' -f1 | tail -1 | egrep -q "[a-zA-Z_:]+"
+[ $? -eq 0 ] && swap_input=0
 
 # Get the right value_row for the cut command
 if [ $swap_input -eq 1 ]; then
