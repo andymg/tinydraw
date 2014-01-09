@@ -124,19 +124,23 @@ EOF
 ((y= y_start + rect_width))
 
 ## Build the map between the max value with the SVG width
-max_value=$(cat $data_file | tr -s ' ' | tr '\t' ' ' | cut -d ' ' -f$value_row | sort -g -r | head -1)
+if [ $swap_input -eq 1 ]; then
+    max_value=$(cat $data_file | tr -s ' ' | tr '\t' ' ' | sed -e 's/[[:space:]]*$//g' | sed -e 's/\(^[0-9\.]*\) .*/\1/g' | sort -g -r | head -1)
+else
+    max_value=$(cat $data_file | tr -s ' ' | tr '\t' ' ' | sed -e 's/[[:space:]]*$//g' | sed -e 's/.* \([0-9\.]*\)$/\1/g' | sort -g -r | head -1)
+fi
 mult=$(echo "scale=$float_precision; ($svg_width - $x_start - $text_width)/ $max_value" | bc)
 
-while read param1 param2
+while read line
 do
 
-# Get parameters
+# Parse string and value
 if [ $swap_input -eq 1 ]; then
-    string="$param2"
-    value="$param1"
+    string="${line#* }"
+    value="${line%% *}"
 else
-    string="$param1"
-    value="$param2"
+    string="${line% *}"
+    value="${line##* }"
 fi
 
 # Drop the chars: ",',),(,<,>
