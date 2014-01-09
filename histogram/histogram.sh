@@ -110,7 +110,7 @@ EOF
 
 # Draw the canvas
 cat <<EOF
-    <rect x="0.0" y="0" width="1200.0" height="100%" fill="url(#background)"  />
+    <rect x="0.0" y="0" width="1200.0" height="100%" fill="url(#background)"/>
 EOF
 
 # Draw the title
@@ -120,7 +120,7 @@ EOF
 
 # Draw the dynamic bar
 cat <<EOF
-    <text text-anchor="" x="10" y="50" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details" > </text>
+    <text text-anchor="" x="10" y="50" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details"></text>
 EOF
 
 # Draw the data
@@ -166,8 +166,8 @@ text_x=$(echo "$height+$text_offset" | bc)
 ((text_y = y + rect_width/2 + rect_width/3))
 
 echo "    <g class=\"func_g\" onmouseover=\"s('$string($value)')\" onmouseout=\"c()\">"
-echo "        <rect x=\"$x_start\" y=\"$y\" width=\"$height\" height=\"$rect_width\" fill=\"rgb($r,$g,$b)\" rx=\"2\" ry=\"2\" />"
-echo "        <text text-anchor=\"\" x=\"$text_x\" y=\"$text_y\" font-size=\"$font_size\" font-family=\"Verdana\" fill=\"rgb(0,0,0)\"  >$string($value)</text>"
+echo "        <rect x=\"$x_start\" y=\"$y\" width=\"$height\" height=\"$rect_width\" fill=\"rgb($r,$g,$b)\" rx=\"2\" ry=\"2\"/>"
+echo "        <text text-anchor=\"\" x=\"$text_x\" y=\"$text_y\" font-size=\"$font_size\" font-family=\"Verdana\" fill=\"rgb(0,0,0)\">$string($value)</text>"
 echo "    </g>"
 
 done < $data_file
