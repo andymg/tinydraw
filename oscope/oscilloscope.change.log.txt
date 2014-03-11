@@ -1,0 +1,347 @@
+commit 810b9414c6689dff61848f1b6f2e44b4a573bb8c
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Fri Aug 16 22:32:46 2013 +0800
+
+    Fix up min value calculation
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 0f154f225e56ef94731c7cdd372c500c48a3a637
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Mon Jul 22 10:11:57 2013 +0800
+
+    Fix up some potential hangs
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 1ea64cff53370d9055026d75d239abbde00faab6
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Thu Jul 11 20:48:25 2013 +0800
+
+    Don't touch self.auto manually
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 14981d42ab6d17321cb2562bffc994f1c1522df1
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Thu Jul 11 20:41:39 2013 +0800
+
+    Reset all previous information
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 69f5f68bcdee48e7c615d5ee69724ee32dfae706
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Thu Jul 11 20:27:22 2013 +0800
+
+    Filter out the background introduced by the commands themselves.
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit b8997e0db65e21932145422105bc852c5b78e170
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Thu Jul 11 20:10:47 2013 +0800
+
+    Change the pause/running status
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit cfbfc0271c9969002c4b5344a239b2728b1cf4ca
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Thu Jul 11 14:20:53 2013 +0800
+
+    Allow to show the status of backend and auto
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 01e26a3bbc6cc5b3cf9035eef40694c6ec1aefac
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 18:50:32 2013 +0800
+
+    print top info
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 48abdbe7dbe4c5ff5b2678b54f0c01430f16a145
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 16:52:49 2013 +0800
+
+    Fix up adb device not found issue
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 30ce9d2614db5398baf4e778a3c55f313904ba10
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 16:49:42 2013 +0800
+
+    Improve the performance via reducing the ftrace buffer
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit c13cc63bbb20873146bcfa261e4678055c44f35e
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 16:36:31 2013 +0800
+
+    Improve the performance while reset()
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 5e44658d81c62aa0f030e24ee330b81f60a35834
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 16:08:48 2013 +0800
+
+    Fix up reset() failure
+    
+    Put it into another thread to avoid block thre sampling thread.
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 523998d664e9892c204ae982025fa78adbb6debf
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 15:11:47 2013 +0800
+
+    Print the background information on standard output
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit a3a31c625497f405b40b113ac1c28c31d02995b8
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 15:11:08 2013 +0800
+
+    Enable auto report if backend enabled
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit df9936ee5bb2899053a34594c9be0774cf324747
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 14:43:11 2013 +0800
+
+    Add two keys shortcuts for record background tasks and auto report
+    
+    Allows to report high load tasks automatically.
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit b5fa601c26551f30dd7002c5f3d652d900679775
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 13:54:40 2013 +0800
+
+    uitls: Fix up wq name matching
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 3533842f2819269d75c93661938d54217d3b302d
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 13:39:55 2013 +0800
+
+    Filter more backend tracing load
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit da87d424e86bb49c80bff0e2ca767262ee6ebd08
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 13:30:15 2013 +0800
+
+    Fix up typo
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 20d568f7bc6dd258fc2c18a52de0fd4c7098f338
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 13:22:36 2013 +0800
+
+    Set a more readable xticks and xticks labels
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit aa08e9da373a3f3299d89525a692e83f5fffcfc1
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 12:55:50 2013 +0800
+
+    Show x tick labels
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 2821d1833cabf6f818b1e59cd8bf2611bbd377ac
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 12:45:44 2013 +0800
+
+    Add an option for backend enable/disable
+    
+    By default, don't check backend information, if want to monitor background,
+    enable it with -b or --backend.
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit becde48bdf472d3e974a150dddba11151a03415e
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 11:51:09 2013 +0800
+
+    Fix up a trivial issue
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 0242040bb78593b6c65371ec05335cb6f89bfb2b
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 11:50:21 2013 +0800
+
+    Fix up for target device
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 0fe9adc513cdbba21683066b759b5e9a8939bb2e
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 11:15:56 2013 +0800
+
+    Silence the background output
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 0f97a68ff11603db00411224bf14b1f5b8cab3d2
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 11:14:23 2013 +0800
+
+    uitls: Allow to get more background tasks
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 6bd7a516586aaa95d1d24fe5999a5aa333aa8bfa
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Wed Jul 10 11:03:08 2013 +0800
+
+    Optimize the getting of the workqueue functions
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 96898e4dbadb8610a4d1df3fa364269fc71205db
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 19:06:16 2013 +0800
+
+    Get the real function of a workqueue
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 5584cf17c18882508fd8c25b2e40f6ad1c7266e2
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 17:44:35 2013 +0800
+
+    use lightgreen color as before
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit e281d0868c6f9e4f973ae5772cf14d63f984f63a
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 17:43:30 2013 +0800
+
+    Don't get top info while pause
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 803c80536630593e7fd913cbaa1df4774bbfb943
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 17:25:24 2013 +0800
+
+    Improve the background check threshold
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 7844b675af17372d725844ed183f6ac85d85c726
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 17:18:35 2013 +0800
+
+    Decrease the max offset
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 2cbf01e142d0ae369d3a8197ffa9d4a8105e36c0
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 17:01:53 2013 +0800
+
+    Allow to set the graph type
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit dd58fd43914fdc9ed6751dd94b1f128855c371e6
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 14:41:18 2013 +0800
+
+    Drop the 'top' itself and report more processes
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 9ab28ea10aff23f62d46b9793c1f00ef7d05401c
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 14:31:10 2013 +0800
+
+    Allow to pass in the offset value
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit e3c27e4e8a0efb975211d55c00cf6b6bc0f8b961
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 14:01:28 2013 +0800
+
+    oscillographc: Copy the samples_info for getting right report for non refreshing window
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit eb1258ced340fe6945b83b7a6862f2bcc783b26b
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 13:26:17 2013 +0800
+
+    Get top cpu cost processes
+    
+    Allows to find out the processes who cost too much cpu resource while the
+    current cost is too much.
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 5105214035a7ad5fc16ce0c6192bbab28a86069f
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Tue Jul 9 13:25:24 2013 +0800
+
+    Fix up the shell script for getting machine name
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 1799322e7581181a912a02c2c45e3e85626c4d30
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Fri Jul 5 18:45:17 2013 +0800
+
+    display the current value
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 3c57dd728733b433d0fc7d66bf0cd56a2c52f8f0
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Fri Jul 5 16:38:14 2013 +0800
+
+    Fix up the average calculation
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>
+
+commit 53dfe000a6dcdec33afa26de347fe7a33bdb0c93
+Author: Wu Zhangjin <wuzhangjin@gmail.com>
+Date:   Fri May 25 15:56:18 2012 +0800
+
+    Add software oscillograph support
+    
+    A software oscillograph is extracted from
+    http://git.kernel.org/?p=utils/tuna/tuna.git;a=summary.
+    
+    It is very useful to 'draw' the real time data:
+    
+    For example:
+    
+    o Memory Usage
+    
+    $ while :; do cat /proc/meminfo | grep MemFree | cut -d':' -f2 | tr -s ' ' | cut -d' ' -f2; sleep 1; done | oscilloscope.py -f0
+    
+    o Kernel latency
+    
+    $ cyclictest -p99 -n -v | oscilloscope.py
+    
+    Besides, it can be used to draw the real time current, voltage,
+    blabla... With the coming gpib support, this will become possible ;-P
+    
+    Signed-off-by: Wu Zhangjin <wuzhangjin@gmail.com>

@@ -12,7 +12,7 @@ To show the data more friendly, we often need to draw the data in a graph.
 Different data need different tools, this project aims to collect or develop
 such tools.
 
-## Tools developed by ourselves
+## Tools developed by [TinyLab.org](http://tinylab.org)
 
 - [histogram](histogram/histogram.sh) draws the two row data in SVG
   with histogram
@@ -20,6 +20,12 @@ such tools.
 > This tool derives from  
 > [(Linux)/scripts/bootgraph.pl](http://stuff.mit.edu/afs/sipb/contrib/linux/scripts/bootgraph.pl)
 > and [FlameGraph](https://github.com/brendangregg/FlameGraph).
+
+- [oscope](oscope/oscilloscope.py) A digital oscilloscope, dramatize the
+  data flow real time
+
+> This is based on the oscilloscope and tuna from
+> <http://git.kernel.org/?p=utils/tuna/tuna.git;a=summary>
 
 ## Tools Collected From Internet
 
